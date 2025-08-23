@@ -13,11 +13,12 @@ import { AboutComponent } from '../about/about.component';
 })
 export class FrontPageComponent {
 
+
   projects = [
     {
       name: "Manga Web App",
       link: "https://github.com/Moritz344/MangaWebApp",img: "frontpage.png",
-      desc: "Eine Manga Web app zum Durchsuchen und Suchen von Mangas. Mit der Mangadex api  ",ImgWidth: 500,ImgHeight: 300},
+      desc: "Eine Manga Web app zum Durchsuchen und Suchen von Mangas. Mit der Mangadex api.  ",ImgWidth: 500,ImgHeight: 300},
 
     { name: "Texteditor",
       link: "https://github.com/Moritz344/Texteditor",
