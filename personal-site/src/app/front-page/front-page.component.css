@@ -1,0 +1,44 @@
+
+
+.greet-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+
+}
+
+.project-header{
+  display: flex;
+  margin-left: 50px;
+  color: var(--color-text-light);
+
+}
+.links-header{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  color: var(--color-text-light);
+
+}
+
+.project-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 50px;
+  gap:1rem;
+  justify-content: center;
+
+
+}
+
+.social-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 50px;
+  gap:1rem;
+  justify-content: center;
+
+
+}

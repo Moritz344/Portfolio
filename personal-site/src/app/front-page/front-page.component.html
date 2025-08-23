@@ -1,5 +1,46 @@
 
-<p>front page works!</p>
+
+<div class="greet-container">
+
+<h1>Hallo</h1>
 
 
+</div>
 
+<div class="project-header">
+  <h1>Meine Projekte</h1>
+</div>
+
+<div class="project-container">
+  <app-project
+    *ngFor="let p of projects"
+    [projectName]="p.name"
+    [projectDesc]="p.desc"
+    [projectLink]="p.link"
+    [projectImage]="p.img"
+    [projectImageWidth]="p.ImgWidth"
+    [projectImageHeight]="p.ImgHeight"
+    >
+  </app-project>
+</div>
+
+<div class="links-header">
+  <h1>Meine Links</h1>
+
+</div>
+
+<div class="social-container">
+  <app-project
+    *ngFor="let l of links"
+    [projectName]="l.name"
+    [projectDesc]="l.desc"
+    [projectLink]="l.link"
+    [projectImage]="l.img"
+    [projectImageWidth]="l.ImgWidth"
+    [projectImageHeight]="l.ImgHeight"
+    >
+  </app-project>
+
+</div>
+
+<br>
