@@ -1,0 +1,23 @@
+
+.project-items{
+  background-color: rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: 0.3s ease;
+  border-radius: 10px;
+
+}
+
+.fade-img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+.fade-img.loaded{
+    opacity:1;
+}
+
+.project-items:hover{
+
+  background-color: rgba(0,0,0,0.2);
+
+}
+

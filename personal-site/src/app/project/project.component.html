@@ -1,0 +1,19 @@
+
+
+<div class="project-container" >
+
+  <a [href]="projectLink" target="_blank" >
+    <div class="project-items" >
+      <h1>{{ projectName }}</h1>
+      <span>{{ projectDesc }}</span>
+      <br>
+      <br>
+      <img  (load)="imageLoaded = true" [class.loaded]="imageLoaded" class="fade-img" [src]="projectImage" [width]="projectImageWidth" [height]="projectImageHeight" >
+    </div>
+
+ </a>
+
+  </div>
+
+
+
