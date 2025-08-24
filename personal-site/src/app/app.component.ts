@@ -3,14 +3,14 @@ import { RouterOutlet } from '@angular/router';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { AboutComponent } from './about/about.component';
-import { BlogComponent } from './blog/blog.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,FrontPageComponent,TopbarComponent,AboutComponent,BlogComponent],
+  imports: [RouterOutlet,FrontPageComponent,TopbarComponent,AboutComponent,SkillsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

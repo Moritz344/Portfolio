@@ -1,13 +1,28 @@
-import { Routes } from '@angular/router';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { AboutComponent } from './about/about.component';
-import { BlogComponent } from './blog/blog.component';
+import { NgModule } from '@angular/core';
+import { RouterModule,Routes,  ExtraOptions } from '@angular/router';
 
 
 export const routes: Routes = [
 
     { path: '',component: FrontPageComponent}, // Startseite
-    { path: 'about',component: AboutComponent}, // About page
-    { path: 'blog',component: BlogComponent}, // Blog page
+    { path: 'about',component: FrontPageComponent}, // About page
+    { path: 'projects',component: FrontPageComponent}, // page
+    { path: 'blog',component: FrontPageComponent}, // Blog page
 
 ];
+
+const routerOptions: ExtraOptions = {
+
+  anchorScrolling: 'enabled',
+  scrollOffset: [0,80],
+
+};
+
+@NgModule({
+
+  imports: [RouterModule.forRoot(routes,routerOptions)],
+  exports: [RouterModule]
+})
+export class AppRoutingMdule {}

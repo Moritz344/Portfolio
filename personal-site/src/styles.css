@@ -9,6 +9,9 @@
   --color-secondary: #a48ea9; /* blasses Flieder */
   --color-tertiary: #c2b28f;  /* beige/goldig */
 
+  --color-surface50: rgba(47, 48, 56, 0.3);
+
+
   /* Textfarben */
   --color-text: #e4e4e7;
   --color-text-muted: #a1a1aa;
@@ -18,7 +21,7 @@
   --color-success: #9bbf9e;
   --color-warning: #d6c68a;
   --color-error: #c28a8a;
-
+   --color-success-hover: #85ab89;
   /* Schatten / Ränder */
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.6);
   --border-color: #3a3b42;
@@ -41,6 +44,15 @@ a {
   color: var(--color-primary);   /* sanftes Blaugrün */
   text-decoration: none;
   transition: 0.3s ease;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+section{
+
+  scroll-margin-top: 80px;
+
 }
 
 strong {

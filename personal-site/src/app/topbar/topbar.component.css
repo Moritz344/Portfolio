@@ -1,11 +1,25 @@
 
-.container {
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--color-surface50);
+  z-index: 1000;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 20px;
-
+  align-items: center;
+  backdrop-filter: blur(10px);
 }
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+
+
 
 a{
 
@@ -15,5 +29,5 @@ a{
 }
 
 a:hover{
-  color: var(--color-text);
+  color: var(--color-success-hover);
 }

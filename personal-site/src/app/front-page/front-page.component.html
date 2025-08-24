@@ -1,16 +1,35 @@
-
-
+<section id="home">
 <div class="greet-container">
-
   <h1 class="fade-text" >Moritz</h1>
+</div>
+</section>
+<section id="about">
+<div class="about-container">
+  <app-about class="fade-text"
 
+  ></app-about>
 
 </div>
-  <br> <br> <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+</section>
+
+ <br> <br> <br>  <br> <br> <br> <br> <br>  <br> <br>
+<section id="skills">
+<div class="skills-container">
+  <app-skills
+    class="fade-text"
+    #skills>
+  </app-skills>
+</div>
+</section>
+
+
+ <br> <br> <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
 <div class="project-header">
   <h1 class="fade-text">Meine Projekte</h1>
 </div>
 
+<section id="projekte">
 <div class="project-container">
   <app-project
     *ngFor="let p of projects"
@@ -20,27 +39,12 @@
     [projectImage]="p.img"
     [projectImageWidth]="p.ImgWidth"
     [projectImageHeight]="p.ImgHeight"
-    >
+    #projekte>
   </app-project>
 </div>
+</section>
 
-<div class="links-header">
-  <h1>Meine Links</h1>
 
-</div>
 
-<div class="social-container">
-  <app-project
-    *ngFor="let l of links"
-    [projectName]="l.name"
-    [projectDesc]="l.desc"
-    [projectLink]="l.link"
-    [projectImage]="l.img"
-    [projectImageWidth]="l.ImgWidth"
-    [projectImageHeight]="l.ImgHeight"
-    >
-  </app-project>
 
-</div>
 
-<br>
