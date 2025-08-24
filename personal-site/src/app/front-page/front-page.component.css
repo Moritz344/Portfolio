@@ -56,6 +56,15 @@ h1{
 
 }
 
+pre{
+
+  cursor: pointer;
+  margin-bottom: 0;
+  font-size: 40px;
+  color: var(--color-primary);
+
+}
+
 span{
 
   font-size: 30px;
