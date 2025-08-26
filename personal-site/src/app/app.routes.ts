@@ -8,8 +8,7 @@ export const routes: Routes = [
 
     { path: '',component: FrontPageComponent}, // Startseite
     { path: 'about',component: FrontPageComponent}, // About page
-    { path: 'projects',component: FrontPageComponent}, // page
-    { path: 'blog',component: FrontPageComponent}, // Blog page
+    { path: 'projects',component: FrontPageComponent}, // projects page
 
 ];
 
