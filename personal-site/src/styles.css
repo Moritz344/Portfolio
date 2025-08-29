@@ -46,6 +46,13 @@ a {
   transition: 0.3s ease;
 }
 
+input {
+  background-color: var(--color-text);   /* sanftes Blaugrün */
+  border: none;
+  border-radius: 3px;
+
+}
+
 html{
   scroll-behavior: smooth;
 }

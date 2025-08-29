@@ -47,8 +47,9 @@
 
 .pfp img{
   border-radius: 12px;
-   transform: rotate(-1deg);
-   transition: 0.3s ease;
+  transform: rotate(-1deg);
+  transition: 0.3s ease;
+  border: 3px solid white;
 }
 
 .pfp img:hover{

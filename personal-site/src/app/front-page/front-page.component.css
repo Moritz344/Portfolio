@@ -72,6 +72,19 @@ span{
 
 }
 
+.footer-container{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+.footer-container:hover{
+
+  opacity: 1;
+
+}
+
 .social-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);

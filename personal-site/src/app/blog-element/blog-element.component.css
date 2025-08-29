@@ -1,0 +1,47 @@
+
+.blog-container{
+
+  display:flex;
+  flex-direction: column;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+
+.text-container{
+  width: 70%;
+}
+
+.header-elements{
+  position: relative;
+  align-items: left;
+  width: 70%;
+
+}
+
+.date-text{
+
+  opacity: 0.5;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-right: 620px;
+
+}
+.date-text:hover{
+
+  opacity: 1;
+
+}
+
+.blog-container h1{
+  margin-right: 630px;
+}
+
+.blog-container h2{
+  margin-top: 0;
+  margin-right: 650px;
+}
