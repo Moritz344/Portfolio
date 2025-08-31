@@ -31,3 +31,30 @@ a{
 a:hover{
   color: var(--color-success-hover);
 }
+
+
+.container nav {
+  display: flex;
+}
+
+.container nav a {
+  position: relative;
+}
+
+.container nav a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.container nav a:hover::after {
+  width: 100%;
+}
+
+
