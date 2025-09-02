@@ -11,13 +11,13 @@ export class SkillsComponent implements AfterViewInit{
 
   constructor() {}
   icons = [
-    { name: 'Html', src: 'html.svg', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-    { name: 'Css', src: 'css.svg', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-    { name: 'Bash', src: 'bash.svg', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-    { name: 'Javascript', src: 'javascript.svg', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-    { name: 'Python',src: 'python.svg', link: 'https://www.python.org/downloads/' },
-    { name: 'Angular',src: 'angular.svg', link: 'https://angular.io/docs' },
-    { name: 'Nodejs',src: 'nodejs.svg', link: 'https://nodejs.org/en/' },
+    { name: 'HTML', src: 'html.svg', link: 'https://github.com/Moritz344/MangaWebApp' },
+    { name: 'CSS', src: 'css.svg', link: 'https://github.com/Moritz344/MangaWebApp' },
+    { name: 'Bash', src: 'bash.svg', link: 'https://github.com/Moritz344/bash-balls' },
+    { name: 'Javascript', src: 'javascript.svg', link: 'https://github.com/Moritz344/dl-manga' },
+    { name: 'Python',src: 'python.svg', link: 'https://github.com/Moritz344/Texteditor' },
+    { name: 'Angular',src: 'angular.svg', link: 'https://github.com/Moritz344/MangaWebApp' },
+    { name: 'Nodejs',src: 'nodejs.svg', link: 'https://github.com/Moritz344/mcsh' },
   ];
 
   @ViewChild('iconsList') iconsList!: ElementRef<HTMLDivElement>;
