@@ -18,10 +18,5 @@ export class ProjectComponent {
 
   constructor() {}
 
-  handleClick() {
-
-    console.log("klick");
-
-  }
 
 }

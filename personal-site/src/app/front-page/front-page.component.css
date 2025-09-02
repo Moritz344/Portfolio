@@ -25,9 +25,10 @@
 
 .project-header{
   display: flex;
-  margin-left: 50px;
+  justify-content: center;
   color: var(--color-text-light);
-
+  margin-bottom: 200px;
+  font-size: 30px;
 }
 
 
@@ -40,13 +41,35 @@
 
 .project-container{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(2,600px);
   margin: 50px;
   margin-top: 0px;
-  gap:1rem;
+  gap: 2rem;
+
   justify-content: center;
+  align-items: center;
+
+  justify-items: center;
+  align-items: center;
 
 
+}
+
+.skills-text{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.skills-text h1{
+  color: white;
+  font-size: 20px;
+}
+
+.skills-text:hover{
+  opacity: 1;
 }
 
 h1{
