@@ -16,7 +16,7 @@ import { FormsModule} from '@angular/forms';
 
 export class BlogComponent {
 
-  blogTestArray = [{date: 'sds',name:"ad",text: "sds"}];
+  blogTestArray = [{date: '',name:"",text: ""}];
   selectedBlog = [{}];
   searchArray: any = [{date: '',name: ''}];
   search = false;
@@ -39,7 +39,6 @@ export class BlogComponent {
     if (text !== "") {
       for ( let i=0;i<this.blogTestArray.length;i++) {
         if (this.blogTestArray[i]["name"].includes(text)) {
-          console.log(text,this.blogTestArray[i]["name"]);
           this.searchParameters.name = this.blogTestArray[i].name;
           this.showNoSearchResult = true;
         }else{

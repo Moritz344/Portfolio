@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
 export interface Blog {
-
   date: string;
   name: string;
   text: string;
@@ -26,7 +25,7 @@ export class BlogSettingsService {
 
   constructor() { }
 
-  setCurrentSelected(date: string, name: string,text: string) {
+  setCurrentSelected(date: string, name: string,text: string): void {
     this.currentSelectedBlog = [{date,name,text}];
 
   }
@@ -40,10 +39,14 @@ export class BlogSettingsService {
     return this.blogArray;
   }
 
-  addBlog(name: string,date: string,text: string) {
+  addBlog(name: string,date: string,text: string): void {
     this.blogArray.push({date: date,name: name,text});
   }
 
-  removeBlog() {}
+  removeBlog(data: Blog[]): void {
+    //const index = this.blogArray.indexOf(data);
+    //console.log(index);
+    //this.blogArray.splice(0,1);
+  }
 
 }
