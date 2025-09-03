@@ -59,7 +59,6 @@ export class BlogComponent {
 
   saveBlog(name: string,date: string,text: string) {
     this.blogSettingsService.setCurrentSelected(date,name,text);
-    console.log(this.blogSettingsService.currentSelectedBlog);
   }
 
   addingBlog() {

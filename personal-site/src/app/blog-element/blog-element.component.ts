@@ -24,7 +24,6 @@ export class BlogElementComponent {
     this.blogText= this.blogData[0].text;
 
 
-    console.log(this.blogData);
 
 
   }
