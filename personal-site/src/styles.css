@@ -34,17 +34,6 @@
   --radius: 12px;
 }
 
-html, body {
-  overflow: auto;       /* Scrollen erlauben */
-  height: 100%;         /* wichtig für Safari iOS */
-
-  /* Firefox */
-  scrollbar-width: none;
-
-  /* Internet Explorer & Edge Legacy */
-  -ms-overflow-style: none;
-}
-
 /* Chrome, Safari, Edge (neu) */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
