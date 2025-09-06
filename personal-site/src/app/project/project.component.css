@@ -12,6 +12,28 @@
 
 
 }
+@media (max-width: 768px) {
+
+  .project-items{
+    max-width: 250px;
+    max-height: 350px;
+
+  }
+  .project-items img{
+    max-width: 250px;
+    max-height: 200px;
+
+  }
+  .project-header{
+
+    margin-left: 0px;
+    font-size: 20px;
+
+  }
+
+
+}
+
 
 .project-items:hover{
   transform: scale(1.02);

@@ -11,6 +11,17 @@
 
 
 }
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .pfp img {
+    margin-left: 20px;
+  }
+
+
+}
 
 .about-header{
   margin-bottom: 0px;

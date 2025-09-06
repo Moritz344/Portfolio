@@ -13,12 +13,25 @@ nav {
   backdrop-filter: blur(5px);
 }
 
+
+
 nav a {
   margin: 0 15px;
   text-decoration: none;
 }
 
 
+@media (max-width: 768px) {
+
+  nav {
+    position: absolute;
+    flex-direction: column;
+    margin: 2px;
+    z-index: 0;
+  }
+
+
+}
 
 
 a{

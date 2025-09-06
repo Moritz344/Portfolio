@@ -8,6 +8,14 @@
 
 
 }
+@media (max-width: 768px) {
+
+  .pfp img {
+    margin-left: 20px;
+  }
+
+
+}
 
 .icons-item {
   display: flex;

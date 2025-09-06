@@ -10,6 +10,18 @@
 
 }
 
+@media (max-width: 768px) {
+  .greet-container pre{
+    margin-top: 250px;
+    font-size: 10px;
+
+  }
+
+
+
+}
+
+
 .fade-text {
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
@@ -55,6 +67,23 @@
 
 
 }
+
+@media (max-width: 768px) {
+
+  .project-container{
+    grid-template-columns: repeat(1,600px);
+
+  }
+  .project-header{
+
+    margin-left: 0px;
+    font-size: 20px;
+
+  }
+
+
+}
+
 
 .skills-text{
   display: flex;
