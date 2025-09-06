@@ -17,6 +17,15 @@
   margin-top: 20px;
 
 }
+@media (max-width: 768px) {
+
+  .blog-container{
+    margin-top: 300px;
+  }
+
+
+}
+
 
 .blog-items{
 
