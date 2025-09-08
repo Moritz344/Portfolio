@@ -8,6 +8,9 @@
       <br>
       <br>
       <img  (load)="imageLoaded = true" [class.loaded]="imageLoaded" class="fade-img" [src]="projectImage" [width]="projectImageWidth" [height]="projectImageHeight" >
+      <app-badge
+      [name]="projectLanguage"
+      ></app-badge>
     </div>
 
  </a>

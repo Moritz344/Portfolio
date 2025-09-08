@@ -19,25 +19,25 @@ export class FrontPageComponent {
 
   projects = [
     {
-      name: "Manga Web App",
+      name: "Manga Web App",lang: "Typescript",
       link: "https://github.com/Moritz344/MangaWebApp",img: "frontpage.png",
-      desc: "Eine Manga Web app zum Durchsuchen und Suchen von Mangas. Mit der Mangadex api.  ",ImgWidth: 500,ImgHeight: 300},
+      desc: "Eine Manga Web app zum Durchsuchen und Suchen von Mangas. Mit der Mangadex api.  ",ImgWidth: 500,ImgHeight: 280},
 
-    { name: "Texteditor",
+    { name: "Texteditor", lang: "Python",
       link: "https://github.com/Moritz344/Texteditor",
-      img: "texteditor.png",desc: "Ein einfach gehaltener Texteditor für Notizen oder um python code zuschreiben.",ImgWidth: 500,ImgHeight: 300 },
+      img: "texteditor.png",desc: "Ein einfach gehaltener Texteditor für Notizen oder um python code zuschreiben.",ImgWidth: 500,ImgHeight: 280 },
 
-    { name: "Pixel Sim",
+    { name: "Pixel Sim", lang: "Python",
       link: "https://github.com/Moritz344/Simulation-of-Life",img: "pixel-sim.png",
-      desc: "Pixel die Leben Simulieren. Es geht um kleine pixel in einem grid die regeln befolgen.",ImgWidth: 500, ImgHeight: 300 },
+      desc: "Pixel die Leben Simulieren. Es geht um kleine pixel in einem grid die regeln befolgen.",ImgWidth: 500, ImgHeight: 280 },
 
-    { name: "mcsh", link: "https://github.com/Moritz344/mcsh",img: "mcsh.png",
+    { name: "mcsh", lang: "Javascript", link: "https://github.com/Moritz344/mcsh",img: "mcsh.png",
       desc: "Eine tui um sich mit minecraft servern zu verbinden und zu chatten.",ImgWidth: 500, ImgHeight: 300},
 
-    { name: "SpaceInvaders", link: "https://github.com/Moritz344/SpaceInvader",img: "spaceinvader.png",
+    { name: "SpaceInvaders", lang: "Python",link: "https://github.com/Moritz344/SpaceInvader",img: "spaceinvader.png",
       desc: "Ein klassischer SpaceInvader klon.",ImgWidth: 500, ImgHeight: 300},
 
-    { name: "Twitch Chat App", link: "https://github.com/Moritz344/Private-Twitch",img: "twich-chat.png",
+    { name: "Twitch Chat App", lang: "Python",link: "https://github.com/Moritz344/Private-Twitch",img: "twich-chat.png",
       desc: "Eine gui um Twitch Chat Nachrichten zu lesen.",ImgWidth: 500, ImgHeight: 300},
 
   ];

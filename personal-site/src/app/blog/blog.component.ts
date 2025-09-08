@@ -12,7 +12,6 @@ import { FormsModule} from '@angular/forms';
   styleUrl: './blog.component.css',
 })
 
-// TODO: datum + liste + search
 
 export class BlogComponent {
 

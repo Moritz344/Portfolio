@@ -1,4 +1,5 @@
 
+
 <app-topbar></app-topbar>
 
 <section id="home">
@@ -51,6 +52,7 @@
   <app-project
     *ngFor="let p of projects"
     [projectName]="p.name"
+    [projectLanguage]="p.lang" 
     [projectDesc]="p.desc"
     [projectLink]="p.link"
     [projectImage]="p.img"

@@ -15,8 +15,7 @@ export class BlogSettingsService {
   blogArray: Blog[] = [
     {date: '29 Aug, 2025',name: 'Hello World',
       text: `
-      Hallo ich bins. Mal sehen ob ich mich irgendwann überwinde einen richtigen blog Eintrag
-      hier zu schreiben. Aber bis dahin, tschau!
+      Hallo Welt!
       `
     },
   ];
