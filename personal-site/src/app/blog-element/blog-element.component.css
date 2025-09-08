@@ -71,6 +71,10 @@
     width: 270px;
   }
 
+  .header-elements span{
+    background-color: black;
+  }
+
 }
 
 
