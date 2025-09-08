@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { BlogSettingsService } from '../blog-settings.service';
-import { Blog } from '../blog.models';
+import { BlogSettingsService } from '../services/blog-settings.service';
+import { Blog } from '../models/blog.models';
 import { TopbarComponent } from '../topbar/topbar.component';
 
 @Component({

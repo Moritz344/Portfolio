@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BlogSettingsService } from '../blog-settings.service';
+import { BlogSettingsService } from '../services/blog-settings.service';
 import { RouterModule } from '@angular/router';
 import { TopbarComponent } from '../topbar/topbar.component';
 import { CommonModule} from '@angular/common';

@@ -1,10 +1,5 @@
 import { Injectable } from '@angular/core';
-
-export interface Blog {
-  date: string;
-  name: string;
-  text: string;
-}
+import { Blog } from '../models/blog.models';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +8,9 @@ export class BlogSettingsService {
 
 
   blogArray: Blog[] = [
-    {date: '29 Aug, 2025',name: 'Hello World',
+    {
+      date: '29 Aug, 2025',
+      name: 'Hello World',
       text: `
       Hallo Welt!
       `
