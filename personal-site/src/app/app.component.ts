@@ -1,9 +1,4 @@
 import { RouterOutlet } from '@angular/router';
-import { FrontPageComponent } from './front-page/front-page.component';
-import { TopbarComponent } from './topbar/topbar.component';
-import { AboutComponent } from './about/about.component';
-import { SkillsComponent } from './skills/skills.component';
-
 import { Component, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
@@ -12,7 +7,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,FrontPageComponent,TopbarComponent,AboutComponent,SkillsComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
