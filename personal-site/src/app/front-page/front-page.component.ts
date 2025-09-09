@@ -33,7 +33,7 @@ export class FrontPageComponent {
       desc: "Eine TUI um sich mit minecraft servern zu verbinden und zu chatten.",ImgWidth: 500, ImgHeight: 300},
 
     { name: "SpaceInvaders", lang: "Python",link: "https://github.com/Moritz344/SpaceInvader",img: "spaceinvader.png",
-      desc: "Ein klassischer SpaceInvader klon. Geschrieben mit der Python Bibiliothek Pygame.",ImgWidth: 500, ImgHeight: 300},
+      desc: "Ein klassischer SpaceInvader klon. Geschrieben mit Pygame.",ImgWidth: 500, ImgHeight: 300},
 
     { name: "Twitch Chat App", lang: "Python",link: "https://github.com/Moritz344/Private-Twitch",img: "twich-chat.png",
       desc: "Eine gui um Twitch Chat Nachrichten zu lesen. Geschrieben in Python mit Customtkinter.",ImgWidth: 500, ImgHeight: 300},
