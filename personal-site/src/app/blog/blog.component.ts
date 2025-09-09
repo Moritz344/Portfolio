@@ -48,7 +48,6 @@ export class BlogComponent {
       }else {
         this.searchParameters.name = "";
         this.showNoSearchResult = true;
-
       }
 
       this.search = true;

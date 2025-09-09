@@ -45,7 +45,6 @@ nav a {
   }
 
   nav a {
-    color: white;
     text-decoration: none;
     font-size: 17px;
     display: block;
@@ -60,13 +59,13 @@ nav a {
 
 a{
 
-  color: var(--color-success);
+  color: var(--color-green);
   font-size: 30px;
 
 }
 
 a:hover{
-  color: var(--color-success-hover);
+  color: var(--color-green-hover);
 }
 
 

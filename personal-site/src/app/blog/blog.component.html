@@ -3,7 +3,7 @@
 
 
   <div class="search-container">
-  <input [(ngModel)]="inputValue" placeholder="Suchen ..." (keydown.code.enter)="searchBlog(inputValue)">
+  <input [(ngModel)]="inputValue"  placeholder="Search ..." (keydown.code.enter)="searchBlog(inputValue)">
   <button (click)=searchBlog(inputValue)>
     <img src="search.svg" width="20" height="20">
   </button>

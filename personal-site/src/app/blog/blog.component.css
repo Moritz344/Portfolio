@@ -46,7 +46,7 @@
 .search-container button{
     position: absolute;
     border: none;
-    top: 2px;
+    top: 3px;
     right: 1px;
     background: transparent;
     color: black;
@@ -63,7 +63,7 @@ button{
 }
 
 input {
-  padding: 2px;
+  padding: 4px;
   outline: none;
   width: 200px;
   height: 20px;

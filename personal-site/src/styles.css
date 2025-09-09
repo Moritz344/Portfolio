@@ -24,10 +24,10 @@
   --color-text-light: #70707a;
 
   /* Zustände */
-  --color-success: #9bbf9e;
+  --color-green: #9bbf9e;
   --color-warning: #d6c68a;
   --color-error: #c28a8a;
-   --color-success-hover: #85ab89;
+   --color-green-hover: #85ab89;
   /* Schatten / Ränder */
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.6);
   --border-color: #3a3b42;
@@ -46,7 +46,9 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
 }
+
 
 button {
   background: var(--color-primary);

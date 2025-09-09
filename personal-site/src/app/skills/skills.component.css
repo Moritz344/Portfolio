@@ -1,6 +1,7 @@
 
 
 .skills-container{
+  position: relative;
   overflow: hidden;
   width: 100vw;
   padding: 10px 0;
@@ -15,12 +16,9 @@
   }
 
   .skills-container{
-    overflow: scroll;
+    overflow-X: scroll;
   }
-
-
-
-
+  
 }
 
 .icons-item {

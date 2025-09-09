@@ -8,8 +8,6 @@ import { RouterModule,Routes,  ExtraOptions } from '@angular/router';
 export const routes: Routes = [
 
     { path: '',component: FrontPageComponent}, // Startseite
-    { path: 'about',component: FrontPageComponent}, // About page
-    { path: 'projects',component: FrontPageComponent}, // projects page
     { path: 'blog',component: BlogComponent}, // projects page
     { path: 'blog/:name',component: BlogElementComponent}, // projects page
 
