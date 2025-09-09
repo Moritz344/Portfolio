@@ -47,7 +47,7 @@
     position: absolute;
     border: none;
     top: 2px;
-    right: 4px;
+    right: 1px;
     background: transparent;
     color: black;
 
@@ -59,7 +59,7 @@ button{
   border-radius: 0px;
   background-color: white;
   color: black;
-
+  
 }
 
 input {
@@ -67,8 +67,11 @@ input {
   outline: none;
   width: 200px;
   height: 20px;
-
+  color: white;
+  background-color: rgba(0, 0, 0, 0.222);
+  border: 1px solid white;
 }
+
 
 a{
 
