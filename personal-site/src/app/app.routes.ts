@@ -12,17 +12,3 @@ export const routes: Routes = [
     { path: 'blog/:name',component: BlogElementComponent}, // projects page
 
 ];
-
-const routerOptions: ExtraOptions = {
-
-  anchorScrolling: 'enabled',
-  scrollOffset: [0,80],
-
-};
-
-@NgModule({
-
-  imports: [RouterModule.forRoot(routes,routerOptions)],
-  exports: [RouterModule]
-})
-export class AppRoutingMdule {}
