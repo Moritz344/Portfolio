@@ -4,7 +4,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px;
+  padding: 15px ;
   background-color: var(--color-surface50);
   z-index: 1000;
   display: flex;
@@ -13,22 +13,46 @@ nav {
   backdrop-filter: blur(5px);
 }
 
+.active{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: 0.3s ease;
 
+}
+ button{
+    background-color: transparent;
+    color:white;
+    box-shadow: none;
+    position: absolute;
+    border-radius: 0px;
+    border: none;
+    width: 40px;
+    height: 50px;
+    left: 80%;
+  }
 
 nav a {
   margin: 0 15px;
   text-decoration: none;
 }
 
-
 @media (max-width: 768px) {
 
-  nav {
-    position: absolute;
-    flex-direction: column;
-    margin: 2px;
-    z-index: 0;
+  nav{
+    min-height: 50px;
+    justify-content: left;
   }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    margin-right: 1px;
+  }
+  
+
 
 
 }

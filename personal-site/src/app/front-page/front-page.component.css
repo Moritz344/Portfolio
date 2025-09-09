@@ -10,7 +10,7 @@
 
 @media (max-width: 768px) {
   .greet-container {
-    margin-top: 400px;
+   margin-top: 300px;
 
   }
 
@@ -78,7 +78,6 @@
 
   .project-container{
     grid-template-columns: repeat(1,600px);
-    gap: 4rem 0;
 
   }
   .project-header{

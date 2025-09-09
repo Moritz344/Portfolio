@@ -1,16 +1,28 @@
 
-<div class="container">
+<div class="container" >
 
-  <div class="container-elements">
+    <div class="container-elements"   >
+          <nav>
+          @if (isMobile) {
+            <div class="active">
+              <button (click)="onNavToggle()">
+                <img src="menu.svg"></button>
+                @if (toggleNav) {
+                  <a [routerLink]="['/']"  fragment="home">Home </a>
+                  <a [routerLink]="['/']" fragment="about">About </a>
+                  <a [routerLink]="['/']" fragment="skills">Skills </a>
+                  <a [routerLink]="['/']" fragment="projekte" >Projekte </a>
+                  <a [routerLink]="['/blog', ]">Blog</a>
+              }
+            </div>
+          }@else {
+            <a [routerLink]="['/']" fragment="home">Home </a>
+            <a [routerLink]="['/']" fragment="about">About </a>
+            <a [routerLink]="['/']" fragment="skills">Skills </a>
+            <a [routerLink]="['/']" fragment="projekte" >Projekte </a>
+            <a [routerLink]="['/blog', ]">Blog</a>
 
-    <nav>
-      <a [routerLink]="['/']" fragment="home">Home </a>
-      <a [routerLink]="['/']" fragment="about">About </a>
-      <a [routerLink]="['/']" fragment="skills">Skills </a>
-      <a [routerLink]="['/']" fragment="projekte" >Projekte </a>
-      <a [routerLink]="['/blog', ]" >Blog</a>
-    </nav>
-
-  </div>
-
+          }
+          </nav>
+    </div>
 </div>

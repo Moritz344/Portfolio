@@ -32,11 +32,9 @@ export class SkillsComponent implements AfterViewInit{
   ngAfterViewInit() {
     let result = this.checkDeviceForMobile();
     console.log(result);
-    if (result) {
       const track = this.iconsList.nativeElement;
       this.trackWidth = track.scrollWidth / 2;
       requestAnimationFrame(this.animate.bind(this));
-    }
   }
 
   private start: number | null = null;
