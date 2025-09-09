@@ -6,8 +6,6 @@ import { SkillsComponent } from '../skills/skills.component';
 import { TopbarComponent } from '../topbar/topbar.component';
 
 
-// TODO: show projects here / socials
-
 @Component({
   selector: 'app-front-page',
   imports: [ProjectComponent,AboutComponent,SkillsComponent,CommonModule,TopbarComponent],

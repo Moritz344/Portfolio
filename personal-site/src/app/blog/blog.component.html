@@ -15,7 +15,7 @@
   }
   <div class="blog-items">
     @for (blog of blogTestArray; track $index) {
-    @if (searchParameters.name.includes(blog.name) || searchParameters.name === "") {
+      @if (searchParameters.name.includes(blog.name) || searchParameters.name === "") {
       <li>
         <span>{{ blog.date }} </span>
         <a [routerLink]="['/blog',blog.name]" (click)=saveBlog(blog.name,blog.date,blog.text) >{{ blog.name }}</a>

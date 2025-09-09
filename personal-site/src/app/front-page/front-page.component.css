@@ -9,11 +9,19 @@
 }
 
 @media (max-width: 768px) {
-  .greet-container pre{
-    margin-top: 250px;
-    font-size: 10px;
+  .greet-container {
+    margin-top: 400px;
 
   }
+
+  .greet-container pre{
+    font-size: 15px;
+  }
+
+  .skills-text{
+    margin-left: 20px;
+  }
+
 
 
 

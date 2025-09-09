@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-skills',
@@ -9,7 +10,10 @@ import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 // TODO: animation
 export class SkillsComponent implements AfterViewInit{
 
-  constructor() {}
+  allowAnimation: boolean = true;
+
+  constructor(private device: DeviceDetectorService) {}
+
   icons = [
     { name: 'HTML', src: 'html.svg', link: 'https://github.com/Moritz344/MangaWebApp' },
     { name: 'CSS', src: 'css.svg', link: 'https://github.com/Moritz344/MangaWebApp' },
@@ -26,14 +30,28 @@ export class SkillsComponent implements AfterViewInit{
   private trackWidth!: number;
 
   ngAfterViewInit() {
-    const track = this.iconsList.nativeElement;
-    this.trackWidth = track.scrollWidth / 2;
-    requestAnimationFrame(this.animate.bind(this));
+    let result = this.checkDeviceForMobile();
+    console.log(result);
+    if (result) {
+      const track = this.iconsList.nativeElement;
+      this.trackWidth = track.scrollWidth / 2;
+      requestAnimationFrame(this.animate.bind(this));
+    }
   }
 
   private start: number | null = null;
 
+  checkDeviceForMobile() {
+    const isMobile = this.device.getDeviceInfo();
+    console.log(isMobile);
+    if (isMobile.deviceType === "mobile") {
+      return false;
+    }
+    return true;
+  }
+
   private animate(timestamp: number) {
+
     if (!this.start) this.start = timestamp;
     const elapsed = timestamp - this.start;
     const distance = (elapsed / 1000) * this.speed;
