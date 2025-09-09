@@ -1,5 +1,4 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-skills',
@@ -12,7 +11,7 @@ export class SkillsComponent implements AfterViewInit{
 
   allowAnimation: boolean = true;
 
-  constructor(private device: DeviceDetectorService) {}
+  constructor() {}
 
   icons = [
     { name: 'HTML', src: 'html.svg', link: 'https://github.com/Moritz344/MangaWebApp' },
@@ -28,25 +27,15 @@ export class SkillsComponent implements AfterViewInit{
 
   private speed = 50;
   private trackWidth!: number;
+  private start: number | null = null;
 
   ngAfterViewInit() {
-    let result = this.checkDeviceForMobile();
-    console.log(result);
       const track = this.iconsList.nativeElement;
       this.trackWidth = track.scrollWidth / 2;
       requestAnimationFrame(this.animate.bind(this));
   }
 
-  private start: number | null = null;
 
-  checkDeviceForMobile() {
-    const isMobile = this.device.getDeviceInfo();
-    console.log(isMobile);
-    if (isMobile.deviceType === "mobile") {
-      return false;
-    }
-    return true;
-  }
 
   private animate(timestamp: number) {
 
