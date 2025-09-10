@@ -41,6 +41,11 @@
 
 }
 
+.project-in-work{
+	display: grid;
+	justify-content: center;
+}
+
 .project-header{
   display: flex;
   justify-content: center;

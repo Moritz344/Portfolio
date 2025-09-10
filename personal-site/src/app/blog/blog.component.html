@@ -1,17 +1,17 @@
 <app-topbar></app-topbar>
-<div class="blog-container">
+  <div class="blog-container">
 
 
   <div class="search-container">
-  <input [(ngModel)]="inputValue"  placeholder="Search ..." (keydown.code.enter)="searchBlog(inputValue)">
-  <button (click)=searchBlog(inputValue)>
-    <img src="search.svg" width="20" height="20">
-  </button>
+    <input [(ngModel)]="inputValue"  placeholder="Search ..." (keydown.code.enter)="searchBlog(inputValue)">
+    <button (click)=searchBlog(inputValue)>
+      <img src="search.svg" width="20" height="20">
+    </button>
   </div>
 
 
   @if (!showNoSearchResult) {
-          <span class="no-result-text">Kein Blog Eintrag für <strong>'{{ inputValue }}'</strong> gefunden!</span>
+      <span class="no-result-text">Kein Blog Eintrag für <strong>'{{ inputValue }}'</strong> gefunden!</span>
   }
   <div class="blog-items">
     @for (blog of blogTestArray; track $index) {
@@ -19,8 +19,6 @@
       <li>
         <span>{{ blog.date }} </span>
         <a [routerLink]="['/blog',blog.name]" (click)=saveBlog(blog.name,blog.date,blog.text) >{{ blog.name }}</a>
-
-
       </li>
 
       }

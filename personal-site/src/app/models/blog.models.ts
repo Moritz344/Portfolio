@@ -3,3 +3,5 @@ export interface Blog {
   name: string;
   text: string;
 }
+
+

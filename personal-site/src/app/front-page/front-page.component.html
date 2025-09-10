@@ -50,20 +50,24 @@
 <section id="projekte">
 <div class="project-container">
   <app-project
-    *ngFor="let p of projects"
-    [projectName]="p.name"
-    [projectLanguage]="p.lang" 
-    [projectDesc]="p.desc"
-    [projectLink]="p.link"
-    [projectImage]="p.img"
-    [projectImageWidth]="p.ImgWidth"
-    [projectImageHeight]="p.ImgHeight"
+    [data]="projects"
     #projekte>
   </app-project>
 </div>
 </section>
 
+<div class="project-header">
+	<h1 class="fade-text">Projekte in Arbeit & Geplannt</h1>
+</div>
 
+<div class="project-container">
+     <app-project
+       [data]="projectsInWork"
+       #projekte>
+     </app-project>
+
+
+</div>
 
 <div class="footer-container">
   <footer > © Copyright Moritz Maier 2025 </footer>

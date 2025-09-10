@@ -4,18 +4,21 @@ import { CommonModule} from '@angular/common';
 import { AboutComponent } from '../about/about.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { TopbarComponent } from '../topbar/topbar.component';
+import { BadgeComponent } from '../badge/badge.component';
+import { Project } from '../models/project.models';
 
 
 @Component({
   selector: 'app-front-page',
-  imports: [ProjectComponent,AboutComponent,SkillsComponent,CommonModule,TopbarComponent],
+  standalone:true,
+  imports: [ProjectComponent,AboutComponent,SkillsComponent,CommonModule,TopbarComponent,BadgeComponent],
   templateUrl: "./front-page.component.html",
   styleUrl: './front-page.component.css'
 })
 export class FrontPageComponent {
 
 
-  projects = [
+  projects: Project[] = [
     {
       name: "Manga Web App",lang: "Typescript",
       link: "https://github.com/Moritz344/MangaWebApp",img: "frontpage.png",
@@ -40,6 +43,17 @@ export class FrontPageComponent {
 
   ];
 
+  projectsInWork: Project[] = [
+    {
+     name: "Emerald", lang: "Typescript",link: "https://github.com/Moritz344/emerald-app",img: "notes.png",
+     desc: "Eine open-source und minimale Notiz app.",ImgWidth: 500, ImgHeight: 300,
+    },
+    {
+     name: "Buch Suche", lang: "Typescript",link: "https://github.com/Moritz344",img: "hideImage.svg",
+     desc: "Eine Website zum Druchsuchen und suchen von Büchern.",ImgWidth: 500, ImgHeight: 300,
+    }
+  ];
+
   links = [
     {name: "Github",link:"https://github.com/Moritz344",
     desc:"Mein Github.",img:"",ImgWidth: 0,ImgHeight:0},
@@ -50,7 +64,7 @@ export class FrontPageComponent {
     {name: "X",link:"https://x.com/iuseosu",
     desc:"Mein X.",img:"",ImgWidth: 0,ImgHeight:0},
 
-  ]
+  ];
 
   constructor() {}
 

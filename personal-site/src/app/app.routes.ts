@@ -1,8 +1,7 @@
 import { FrontPageComponent } from './front-page/front-page.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogElementComponent } from './blog-element/blog-element.component';
-import { NgModule } from '@angular/core';
-import { RouterModule,Routes,  ExtraOptions } from '@angular/router';
+import { Routes  } from '@angular/router';
 
 
 export const routes: Routes = [

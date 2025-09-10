@@ -14,6 +14,35 @@
 
 }
 
+.project-container{
+  display: grid;
+  grid-template-columns: repeat(2,600px);
+  margin: 50px;
+ 
+  margin-top: 0px;
+
+  gap: 2rem 0;
+
+  margin-left: 600px;
+
+  justify-content: center;
+  align-items: center;
+
+  justify-items: center;
+  align-items: center;
+
+
+
+}
+
+
+.badge-container{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 0px;
+}
+
+
 @media (max-width: 768px) {
 
   .project-items{
@@ -36,6 +65,11 @@
 
 
 }
+
+app-badge{
+	margin-right: 10px;
+}
+
 
 
 .project-items:hover{
