@@ -45,6 +45,15 @@
 
 @media (max-width: 768px) {
 
+
+  .project-container{
+    grid-template-columns: repeat(1,600px);
+    margin-left: 0;
+
+  }
+
+
+
   .project-items{
     max-width: 250px;
     height: 390px;

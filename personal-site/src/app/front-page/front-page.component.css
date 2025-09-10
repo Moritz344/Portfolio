@@ -83,11 +83,17 @@
 
   .project-container{
     grid-template-columns: repeat(1,600px);
+    margin-left: 100px;
 
   }
+
+  .projectInWork-header{
+	  margin-left: 10px;
+	  text-align: center;
+  }
+
   .project-header{
 
-    margin-left: 0px;
     font-size: 20px;
 
   }
