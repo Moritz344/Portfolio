@@ -1,4 +1,13 @@
 
 <div class="container">
-    	<span> {{ name }}</span>
+	@if (name === 'Python') {
+    	  	<span class="python"> {{ name }}</span>
+	  }@else if (name === 'Typescript'){
+    	  	<span class="typescript"> {{ name }}</span>
+	  }@else if (name === 'Javascript') {
+    	  	<span class="javascript"> {{ name }}</span>
+	  }@else{
+    	  	<span > {{ name }}</span>
+
+	}
 </div>

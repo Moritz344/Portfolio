@@ -83,6 +83,7 @@ app-badge{
 
 .project-items:hover{
   transform: scale(1.02);
+  background-color: rgba(0,0,0,0.2);
 }
 
 img {
@@ -97,9 +98,4 @@ img {
     opacity:1;
 }
 
-.project-items:hover{
-
-  background-color: rgba(0,0,0,0.2);
-
-}
 

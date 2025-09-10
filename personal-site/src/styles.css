@@ -17,6 +17,8 @@
   /* 20% Transparenz */
   --black-low-opacity-light: rgba(0, 0, 0, 0.2);
 
+  --color-warning: #FF5722;
+
 
   /* Textfarben */
   --color-text: #e4e4e7;
@@ -57,6 +59,7 @@ button {
   box-shadow: var(--shadow-soft);
 }
 
+
 a {
   color: var(--color-primary);   /* sanftes Blaugrün */
   text-decoration: none;
@@ -94,9 +97,6 @@ p{
 
 }
 
-a:hover{
-  color: var(--color-text);
-}
 
 button.secondary {
   background: var(--color-secondary);

@@ -12,7 +12,9 @@
                  [src]="p.img" 
                  [width]="p.ImgWidth" 
                  [height]="p.ImgHeight">
+
                 <app-badge [name]="p.lang" ></app-badge>
+
 		@if (p.lang === 'Typescript') {
                 	<app-badge name="Angular" ></app-badge>
 		}@else if (p.lang === 'Javascript') {
