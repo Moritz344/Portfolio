@@ -19,8 +19,6 @@ export class BlogElementComponent {
   blogDate = "";
   blogText = "";
 
-  blogItems: Blog[] = [];
-  blogResults = true;
 
   constructor(private blogSettingsService: BlogSettingsService) {
 
@@ -37,8 +35,6 @@ export class BlogElementComponent {
     this.blogDate = this.blogData[0].date;
     this.blogText= this.blogData[0].text;
 
-    this.blogItems = this.blogSettingsService.getBlogItems();
-    console.log(this.blogItems);
 
   }
 

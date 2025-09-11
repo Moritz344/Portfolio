@@ -11,10 +11,11 @@ export class BlogSettingsService {
     {
       date: '29 Aug, 2025',
       name: 'Hello World',
-      text: `
-      Hallo Welt!
+      text: `Hallo Welt
       `
     },
+
+
   ];
 
   currentSelectedBlog: Blog[] = [];

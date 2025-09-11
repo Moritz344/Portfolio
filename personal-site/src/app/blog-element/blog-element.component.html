@@ -13,25 +13,11 @@
 
 
 
-
 <div class="text-container">
+
   <p>{{ blogText }}</p>
-</div>
 
 </div>
-
-<div class="blog-box">
-	<span *ngIf="blogItems.length <= 1">Andere Blog Einträge:</span> <br> 
-	
-	@for(blog of blogItems; track $index) {
-	@if (blogItems.length <= 1) {
-		<div class="error-box">
-			<img src="error.svg">
-			<span class="error">Keine anderen Blog Einträge gefunden</span>
-		</div>
-	}@else {
-        	<a [routerLink]="['/blog',blog.name]" (click)=saveBlog(blog.name,blog.date,blog.text)  >{{ blog.name }}</a> <br>
-
-	}
-	}
 </div>
+
+
