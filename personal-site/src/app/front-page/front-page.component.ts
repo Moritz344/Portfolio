@@ -24,7 +24,7 @@ export class FrontPageComponent {
       link: "https://github.com/Moritz344/MangaWebApp",img: "frontpage.png",
       desc: "Eine Manga Web app zum Durchsuchen und Suchen von Mangas. Mit der Mangadex api.  ",ImgWidth: 500,ImgHeight: 280},
 
-    { name: "Texteditor", lang: "Python", 
+    { name: "Texteditor", lang: "Python",
       link: "https://github.com/Moritz344/Texteditor",
       img: "texteditor.png",desc: "Ein einfach gehaltener Texteditor für Notizen oder um python code zuschreiben.",ImgWidth: 500,ImgHeight: 280 },
 
@@ -49,7 +49,7 @@ export class FrontPageComponent {
      desc: "Eine open-source und minimale Notiz app.",ImgWidth: 500, ImgHeight: 300,
     },
     {
-     name: "Buch Suche", lang: "Typescript",link: "https://github.com/Moritz344",img: "hideImage.svg",
+     name: "Buch Suche", lang: "Typescript",link: "https://github.com/Moritz344/book-page",img: "book-page.png",
      desc: "Eine Website zum Druchsuchen und suchen von Büchern.",ImgWidth: 500, ImgHeight: 300,
     }
   ];
