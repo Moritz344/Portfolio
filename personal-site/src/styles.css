@@ -17,8 +17,6 @@
   /* 20% Transparenz */
   --black-low-opacity-light: rgba(0, 0, 0, 0.2);
 
-  --color-warning: #FF5722;
-
 
   /* Textfarben */
   --color-text: #e4e4e7;
@@ -66,12 +64,13 @@ a {
   transition: 0.3s ease;
 }
 
-input {
-  background-color: var(--color-text);   /* sanftes Blaugrün */
-  border: none;
-  border-radius: 3px;
 
+
+input, textarea, select {
+   
 }
+
+
 
 html{
   scroll-behavior: smooth;

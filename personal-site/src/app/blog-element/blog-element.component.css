@@ -11,6 +11,30 @@
 
 }
 
+.back{
+  position: fixed;
+  left: 400px;
+  top: 200px;
+}
+.back img {
+  position: absolute;
+  left: -20px;
+  top: 0px;
+}
+
+.back button{
+  border-radius: 0;
+  background-color: transparent;
+  border: 0;
+  color: var(--color-warning);
+  font-size: 20px;
+  box-shadow: 0px 0px;
+
+}
+
+.back button:hover{
+  cursor: pointer;
+}
 
 
 /* width */
