@@ -66,8 +66,9 @@ a {
 
 
 
-input, textarea, select {
-   
+input{
+  box-shadow: 0px 0px 0px;
+  border: none;
 }
 
 
