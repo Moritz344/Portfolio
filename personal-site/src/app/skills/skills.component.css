@@ -1,11 +1,6 @@
-
-
 .skills-container{
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
   padding: 10px 0;
-  justify-content: center;
+
 
 
 }
@@ -19,7 +14,7 @@
   .skills-container{
     overflow-X: scroll;
   }
-  
+
 }
 
 .icons-item {
@@ -37,10 +32,11 @@
 }
 
 
+
 .icons-list{
   display: flex;
-  gap: 200px;
-  width: max-content;
+  gap: 100px;
+  justify-content: center;
 }
 
 .icons-list span {

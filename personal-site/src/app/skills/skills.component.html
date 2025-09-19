@@ -2,15 +2,8 @@
 <div class="skills-container">
 
 
-  <div class="icons-list" #iconsList >
+  <div class="icons-list" >
 
-      @for(icon of icons; track $index) {
-      <a  [href]="icon.link" target="_blank" class="icons-item">
-          <img [src]="icon.src"  width="90">
-        <span> {{ icon.name }}</span>
-        </a>
-
-      }
       @for(icon of icons; track $index) {
       <a  [href]="icon.link" target="_blank" class="icons-item">
           <img [src]="icon.src"  width="90">
