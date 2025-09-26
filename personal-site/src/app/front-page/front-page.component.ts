@@ -49,7 +49,7 @@ export class FrontPageComponent {
      desc: "Eine open-source und minimale Notiz app.",ImgWidth: 500, ImgHeight: 300,
     },
     {
-     name: "Buch Suche", lang: "Typescript",link: "https://github.com/Moritz344/book-page",img: "book-page.png",
+     name: "Buch Suche", lang: "Typescript",link: "https://barebooks.netlify.app/#/",img: "book-page.png",
      desc: "Eine Website zum Druchsuchen und suchen von Büchern.",ImgWidth: 500, ImgHeight: 300,
     }
   ];
