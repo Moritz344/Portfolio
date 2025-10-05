@@ -47,7 +47,7 @@ export class FrontPageComponent {
   projectsInWork: Project[] = [
     {
      name: "Notizen App", lang: "Typescript",link: "https://github.com/Moritz344/coal",img: "notes.png",
-     desc: "Eine minimale Notiz app.",ImgWidth: 500, ImgHeight: 300,
+     desc: "Eine minimale Notizen app.",ImgWidth: 500, ImgHeight: 300,
     },
     {
      name: "Linux App Launcher", lang: "Typescript",link: "https://github.com/Moritz344/Gravel",img: "gravel_zoom.png",
