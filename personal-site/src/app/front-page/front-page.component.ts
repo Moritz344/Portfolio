@@ -34,9 +34,10 @@ export class FrontPageComponent {
 
     { name: "mcsh", lang: "Javascript", link: "https://github.com/Moritz344/mcsh",img: "mcsh.png",
       desc: "Eine TUI um sich mit minecraft servern zu verbinden und zu chatten.",ImgWidth: 500, ImgHeight: 300},
-
-    { name: "SpaceInvaders", lang: "Python",link: "https://github.com/Moritz344/SpaceInvader",img: "spaceinvader.png",
-      desc: "Ein klassischer SpaceInvader klon. Geschrieben mit Pygame.",ImgWidth: 500, ImgHeight: 300},
+    {
+     name: "Buch Suche App", lang: "Typescript",link: "https://barebooks.netlify.app/#/",img: "book-page.png",
+     desc: "Eine Website zum Druchsuchen und suchen von Büchern.",ImgWidth: 500, ImgHeight: 300,
+    },
 
     { name: "Twitch Chat App", lang: "Python",link: "https://github.com/Moritz344/Private-Twitch",img: "twich-chat.png",
       desc: "Eine gui um Twitch Chat Nachrichten zu lesen. Geschrieben in Python mit Customtkinter.",ImgWidth: 500, ImgHeight: 300},
@@ -45,13 +46,13 @@ export class FrontPageComponent {
 
   projectsInWork: Project[] = [
     {
-     name: "Notizen App", lang: "Typescript",link: "https://github.com/Moritz344/emerald-app",img: "notes.png",
-     desc: "Eine open-source und minimale Notiz app.",ImgWidth: 500, ImgHeight: 300,
+     name: "Notizen App", lang: "Typescript",link: "https://github.com/Moritz344/coal",img: "notes.png",
+     desc: "Eine minimale Notiz app.",ImgWidth: 500, ImgHeight: 300,
     },
     {
-     name: "Buch Suche App", lang: "Typescript",link: "https://barebooks.netlify.app/#/",img: "book-page.png",
-     desc: "Eine Website zum Druchsuchen und suchen von Büchern.",ImgWidth: 500, ImgHeight: 300,
-    }
+     name: "Linux App Launcher", lang: "Typescript",link: "https://github.com/Moritz344/Gravel",img: "gravel_zoom.png",
+     desc: "Ein App Launcher für Linux.",ImgWidth: 500, ImgHeight: 300,
+    },
   ];
 
   links = [
