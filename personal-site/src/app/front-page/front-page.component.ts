@@ -6,6 +6,7 @@ import { SkillsComponent } from '../skills/skills.component';
 import { TopbarComponent } from '../topbar/topbar.component';
 import { BadgeComponent } from '../badge/badge.component';
 import { Project } from '../models/project.models';
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
 
 @Component({
