@@ -37,18 +37,15 @@
 }
 
 
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
 	margin-top: 10px;
     	margin-bottom: 10px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
 	background-color: var(--color-surface);
   	height: 1px;
@@ -94,16 +91,20 @@
 .header-elements{
   position: relative;
   align-items: left;
-  width: 70%;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
 
+.header-elements h1{
+  margin-bottom: 0px;
 }
 
 .date-text{
-
   opacity: 0.5;
   transition: 0.3s ease;
   cursor: pointer;
   margin-right: 620px;
+  margin-top: 0px;
 
 }
 .date-text:hover{

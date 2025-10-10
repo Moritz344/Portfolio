@@ -6,13 +6,12 @@ import { SkillsComponent } from '../skills/skills.component';
 import { TopbarComponent } from '../topbar/topbar.component';
 import { BadgeComponent } from '../badge/badge.component';
 import { Project } from '../models/project.models';
-import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
 
 @Component({
   selector: 'app-front-page',
   standalone:true,
-  imports: [ProjectComponent,AboutComponent,SkillsComponent,CommonModule,TopbarComponent,BadgeComponent],
+  imports: [ProjectComponent,AboutComponent,SkillsComponent,CommonModule,TopbarComponent,BadgeComponent,],
   templateUrl: "./front-page.component.html",
   styleUrl: './front-page.component.css'
 })

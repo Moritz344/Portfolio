@@ -7,7 +7,6 @@ nav {
   padding: 15px ;
   background-color: var(--color-surface50);
   z-index: 1000;
-  display: flex;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(5px);
@@ -72,6 +71,7 @@ a:hover{
 .container nav {
   display: flex;
 }
+
 
 .container nav a {
   position: relative;

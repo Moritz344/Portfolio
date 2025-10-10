@@ -46,6 +46,7 @@ body{
     overflow-y: scroll;
     padding-right: 17px;
     box-sizing: content-box;
+    font-family: 'JetBrains Mono',monospace;
 }
 
 html, body {
@@ -64,7 +65,7 @@ body::-webkit-scrollbar {
 body {
   background: var(--color-bg);
   color: var(--color-text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'JetBrains Mono',monospace;
   margin: 0px;
 }
 

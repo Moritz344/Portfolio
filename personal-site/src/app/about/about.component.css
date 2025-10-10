@@ -7,6 +7,7 @@
   font-size: 20px;
   overflow-wrap: break-word;
   margin: 0px;
+  margin-bottom: 100px;
 
 
 
@@ -28,33 +29,38 @@
   font-size: 50px;
 
 }
+pre{
+  white-space: pre-wrap;
+  width: 1000px;
+  margin-top: 0px;
+}
 
 .about-text{
   margin-left: 50px;
-
-
+  height: 300px;
+  margin-top: 0px;
 }
 
 .icons-container{
-
   display: flex;
-
   gap: 10px;
-
+  margin-right: 20px;
+  width: 200px;
+  background-color: var(--color-surface50);
+  border-radius: 10px;
 }
 
-.github-icon{
-
+.icons-container img{
   opacity: 0.5;
   transition: 0.3s ease;
-
 }
 
-.github-icon:hover{
-
+.icons-container img:hover{
   opacity: 1;
+  transform: scale(1.02);
 
 }
+
 
 .pfp img{
   border-radius: 12px;
