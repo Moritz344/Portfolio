@@ -38,16 +38,16 @@ pre{
 .about-text{
   margin-left: 50px;
   height: 300px;
-  margin-top: 0px;
 }
 
 .icons-container{
   display: flex;
   gap: 10px;
   margin-right: 20px;
-  width: 200px;
   background-color: var(--color-surface50);
   border-radius: 10px;
+  width: 200px;
+  margin-top: -50px;
 }
 
 .icons-container img{

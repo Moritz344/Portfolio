@@ -13,7 +13,7 @@
 
 .back{
   position: fixed;
-  left: 400px;
+  left: 300px;
   top: 200px;
 }
 .back img {
@@ -81,7 +81,7 @@
 
 
 .text-container{
-  width: 70%;
+  width: 75%;
 }
 .text-container p {
   white-space: pre-line;
