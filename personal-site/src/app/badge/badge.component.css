@@ -8,6 +8,15 @@
     border: 1px solid rgba(255, 255, 255, 0.169);
 }
 
+@media (max-width: 768px) {
+
+  .container {
+    margin-top: 1px;
+  }
+}
+
+
+
 .python{
 	color: lightblue;
 }

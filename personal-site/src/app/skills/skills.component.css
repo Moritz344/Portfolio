@@ -15,6 +15,9 @@
     overflow-X: scroll;
   }
 
+  .icons-list{
+    flex-direction: column;
+  }
 }
 
 .icons-item {

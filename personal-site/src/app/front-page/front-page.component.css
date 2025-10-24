@@ -24,11 +24,15 @@
 @media (max-width: 768px) {
   .greet-container {
    margin-top: 300px;
+   margin-left: 350px;
+  }
 
+  .subtext{
+    visibility:hidden;
   }
 
   .greet-container pre{
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .skills-text{
