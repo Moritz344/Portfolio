@@ -1,29 +1,24 @@
-
 <div class="project-container">
-        <div *ngFor="let p of data; let i = index" class="project-items">
+  <div *ngFor="let p of data; let i = index" class="project-items">
     <a [href]="p.link" target="_blank">
-            <h1>{{ p.name }}</h1>
-            <span>{{ p.desc }}</span>
-            <br>
-            <br>
-            <img (load)="imageLoaded = true"
-                 [class.loaded]="imageLoaded"
-                 class="fade-img"
-                 [src]="p.img"
-                 [width]="p.ImgWidth"
-                 [height]="p.ImgHeight">
+      <h1>{{ p.name }}</h1>
+      <span>{{ p.desc }}</span>
+      <br />
+      <br />
+      <img
+        (load)="imageLoaded = true"
+        [class.loaded]="imageLoaded"
+        class="fade-img"
+        [src]="p.img"
+        [width]="p.ImgWidth"
+        [height]="p.ImgHeight"
+      />
 
-                <app-badge [name]="p.lang" ></app-badge>
+      <app-badge [name]="p.lang"></app-badge>
 
-		@if (p.lang === 'Typescript') {
-                	<app-badge name="Angular" ></app-badge>
-		}@else if (p.lang === 'Javascript') {
-                	<app-badge name="Nodejs" ></app-badge>
-		}@else if (p.lang === 'Python' && p.name !== 'Texteditor' && p.name !== 'Twitch Chat App') {
-                	<app-badge name="Pygame" ></app-badge>
-		}@else{
-                	<app-badge name="Customtkinter" ></app-badge>
-		}
+      @if (p.lang === "Typescript") {
+        <app-badge name="Angular"></app-badge>
+      }
     </a>
-        </div>
+  </div>
 </div>
