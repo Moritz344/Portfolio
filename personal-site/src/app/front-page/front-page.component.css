@@ -24,6 +24,9 @@
 
 @media (max-width: 768px) {
 
+* {
+  box-sizing: border-box;
+}
 
   .greet-container {
     margin-top: 200px;
@@ -115,15 +118,12 @@
 
 
   .project-container{
-    grid-template-columns: repeat(1,600px);
+    grid-template-columns: repeat(1,300px);
     margin-left: 100px;
+    box-sizing: border-box;
 
   }
 
-  .projectInWork-header{
-	  margin-left: 10px;
-	  text-align: center;
-  }
 
   .project-header{
 
