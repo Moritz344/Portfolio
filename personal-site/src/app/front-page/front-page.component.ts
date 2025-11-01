@@ -6,6 +6,7 @@ import { SkillsComponent } from "../skills/skills.component";
 import { TopbarComponent } from "../topbar/topbar.component";
 import { BadgeComponent } from "../badge/badge.component";
 import { Project } from "../models/project.models";
+import { BottomComponent } from '../bottom/bottom.component';
 
 @Component({
   selector: "app-front-page",
@@ -17,6 +18,7 @@ import { Project } from "../models/project.models";
     CommonModule,
     TopbarComponent,
     BadgeComponent,
+    BottomComponent
   ],
   templateUrl: "./front-page.component.html",
   styleUrl: "./front-page.component.css",
@@ -28,7 +30,7 @@ export class FrontPageComponent {
       lang: "Typescript",
       link: "https://github.com/Moritz344/MangaWebApp",
       img: "frontpage.png",
-      desc: "Eine Manga Web app zum Durchsuchen und Suchen von Mangas. Mit der Mangadex api.  ",
+      desc: "Eine Manga Web app zum Durchsuchen und Suchen von Mangas.",
       ImgWidth: 500,
       ImgHeight: 280,
     },
@@ -44,7 +46,7 @@ export class FrontPageComponent {
     },
 
     {
-      name: "Pixel Sim",
+      name: "Pixel Simulation",
       lang: "Python",
       link: "https://github.com/Moritz344/Simulation-of-Life",
       img: "pixel-sim.png",
@@ -58,7 +60,7 @@ export class FrontPageComponent {
       lang: "Javascript",
       link: "https://github.com/Moritz344/mcsh",
       img: "mcsh.png",
-      desc: "Eine TUI um sich mit minecraft servern zu verbinden und zu chatten.",
+      desc: "Eine Terminal App um sich mit minecraft servern zu verbinden und zu chatten.",
       ImgWidth: 500,
       ImgHeight: 300,
     },
@@ -77,7 +79,7 @@ export class FrontPageComponent {
       lang: "Typescript",
       link: "https://github.com/Moritz344/lurker",
       img: "lurker.png",
-      desc: "Eine Twitch chat client für twitch.tv. Geschrieben mit Angular und Electron.",
+      desc: "Eine Twitch chat client für twitch.tv.",
       ImgWidth: 500,
       ImgHeight: 300,
     },

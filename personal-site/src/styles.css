@@ -17,6 +17,12 @@
   /* 20% Transparenz */
   --black-low-opacity-light: rgba(0, 0, 0, 0.2);
 
+  --color-neutral-100: oklch(97% 0 0);
+  --color-neutral-400: oklch(70.8% 0 0);
+  --color-neutral-700: oklch(37.1% 0 0);
+  --color-neutral-800: oklch(26.9% 0 0);
+  --color-neutral-900: oklch(20.5% 0 0);
+  --color-neutral-950: oklch(14.5% 0 0);
 
   /* Textfarben */
   --color-text: #e4e4e7;
@@ -81,6 +87,9 @@ a {
   color: var(--color-primary);   /* sanftes Blaugrün */
   text-decoration: none;
   transition: 0.3s ease;
+}
+a:hover{
+  text-decoration: underline;
 }
 
 

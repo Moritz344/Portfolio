@@ -6,7 +6,7 @@
 
       @for(icon of icons; track $index) {
       <a  [href]="icon.link" target="_blank" class="icons-item">
-          <img [src]="icon.src"  width="90">
+          <img (click)="chooseRandom(icon.src)" [src]="icon.src"  width="90">
         <span> {{ icon.name }}</span>
         </a>
 

@@ -1,0 +1,27 @@
+.container{
+}
+.intro-container{
+  display:flex;
+  justify-content: center;
+}
+.header{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  height: 100px;
+  width: 100vw;
+}
+.intro{
+  display: grid;
+  justify-content: center;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  width: 500px;
+  padding: 10px;
+
+}
+
+.intro:hover{
+  color: white;
+}

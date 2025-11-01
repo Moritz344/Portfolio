@@ -2,9 +2,6 @@ import { RouterOutlet } from '@angular/router';
 import { Component, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-
-
-
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
