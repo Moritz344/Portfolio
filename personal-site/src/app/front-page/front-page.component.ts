@@ -56,11 +56,11 @@ export class FrontPageComponent {
     },
 
     {
-      name: "mcsh",
-      lang: "Javascript",
-      link: "https://github.com/Moritz344/mcsh",
-      img: "mcsh.png",
-      desc: "Eine Terminal App um sich mit Minecraft Servern zu verbinden.",
+      name: "Spiel Info Website",
+      lang: "Typescript",
+      link: "https://github.com/Moritz344/raid-log",
+      img: "arc_raiders.jpg",
+      desc: "Eine Info Website über das Spiel Arc Raiders.",
       ImgWidth: 500,
       ImgHeight: 300,
     },
