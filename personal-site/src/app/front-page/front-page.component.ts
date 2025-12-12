@@ -30,7 +30,7 @@ export class FrontPageComponent {
       lang: "Typescript",
       link: "https://github.com/Moritz344/MangaWebApp",
       img: "frontpage.png",
-      desc: "Eine Manga Web App zum durchsuchen und suchen von Mangas.",
+      desc: "Eine Manga Web App zum Durchsuchen und Finden von Mangas.",
       ImgWidth: 500,
       ImgHeight: 280,
     },
@@ -40,7 +40,7 @@ export class FrontPageComponent {
       lang: "Python",
       link: "https://github.com/Moritz344/Texteditor",
       img: "texteditor.png",
-      desc: "Ein einfach gehaltener Texteditor für Notizen oder um Python code zuschreiben.",
+      desc: "Ein einfach gehaltener Texteditor für Notizen oder zum Schreiben von Python Code.",
       ImgWidth: 500,
       ImgHeight: 280,
     },
@@ -50,7 +50,7 @@ export class FrontPageComponent {
       lang: "Python",
       link: "https://github.com/Moritz344/Simulation-of-Life",
       img: "pixel-sim.png",
-      desc: "Pixel die Leben Simulieren. Es geht um kleine pixel in einem grid die Regeln befolgen.",
+      desc: "Pixel, die Leben simulieren. Es geht um kleine Pixel in einem Grid, die Regeln befolgen.",
       ImgWidth: 500,
       ImgHeight: 280,
     },
@@ -69,7 +69,7 @@ export class FrontPageComponent {
       lang: "Typescript",
       link: "https://github.com/Moritz344/Coal",
       img: "notes.png",
-      desc: "Eine minimale Notizen App." ,
+      desc: "Eine minimale Notizen App.",
       ImgWidth: 500,
       ImgHeight: 300,
     },
@@ -79,7 +79,7 @@ export class FrontPageComponent {
       lang: "Typescript",
       link: "https://github.com/Moritz344/lurker",
       img: "lurker.png",
-      desc: "Ein Twitch chat client für twitch.tv.",
+      desc: "Ein chat client für twitch.tv.",
       ImgWidth: 500,
       ImgHeight: 300,
     },
@@ -135,5 +135,5 @@ export class FrontPageComponent {
     },
   ];
 
-  constructor() {}
+  constructor() { }
 }
