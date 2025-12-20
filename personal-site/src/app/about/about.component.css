@@ -69,15 +69,6 @@ pre{
   width: 900px;
 }
 
-.icons-container{
-  display: flex;
-  gap: 10px;
-  margin-right: 20px;
-  background-color: var(--color-surface50);
-  border-radius: 10px;
-  width: 200px;
-  margin-top: -50px;
-}
 
 .icons-container img{
   opacity: 0.5;

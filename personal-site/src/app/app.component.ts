@@ -11,9 +11,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class AppComponent {
   title = 'personal-site';
 
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
-   ngAfterViewInit() {
+  ngAfterViewInit() {
     this.route.fragment.subscribe(fragment => {
       if (fragment) {
         const element = document.getElementById(fragment);

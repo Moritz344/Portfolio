@@ -5,7 +5,17 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 500px;
+  margin-top: 250px;
 
+}
+
+
+.about-container {
+  margin-bottom: 355px;
+}
+
+.skills-container {
+  margin-bottom: 400px;
 }
 
 .subtext{
@@ -15,6 +25,7 @@
   justify-content: center;
   margin-right: 30px;
   cursor: auto;
+  margin-top: -50px;
 
 }
 
