@@ -26,11 +26,11 @@ import { BottomComponent } from '../bottom/bottom.component';
 export class FrontPageComponent {
   projects: Project[] = [
     {
-      name: "Manga Web App",
+      name: "Anime Web App",
       lang: "Typescript",
-      link: "https://github.com/Moritz344/MangaWebApp",
-      img: "frontpage.png",
-      desc: "Eine Manga Web App zum Durchsuchen und Finden von Mangas.",
+      link: "https://github.com/Moritz344/GruvAnime",
+      img: "gruvanime.png",
+      desc: "Eine Web App zum Durchsuchen von Mangas und Animes.",
       ImgWidth: 500,
       ImgHeight: 280,
     },
@@ -78,7 +78,7 @@ export class FrontPageComponent {
       name: "Twitch Client",
       lang: "Typescript",
       link: "https://github.com/Moritz344/lurker",
-      img: "lurker.png",
+      img: "chat_client.png",
       desc: "Ein chat client für twitch.tv.",
       ImgWidth: 500,
       ImgHeight: 300,

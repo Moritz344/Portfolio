@@ -72,6 +72,10 @@
 
 }
 
+a{
+  text-decoration: none;
+}
+
 app-badge{
 	margin-right: 10px;
 }

@@ -9,7 +9,9 @@
 
 }
 
-
+pre{
+  user-select: none;
+}
 .about-container {
   margin-bottom: 355px;
 }

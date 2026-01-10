@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './bottom.component.css'
 })
 export class BottomComponent {
-  currentYear: any;
   constructor() {
-    this.currentYear = new Date().getFullYear() ;
   }
 
 }
