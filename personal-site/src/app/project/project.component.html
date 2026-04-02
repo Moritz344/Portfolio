@@ -1,21 +1,22 @@
 <div class="project-container">
-  <div *ngFor="let p of data; let i = index" class="project-items">
-    <a [href]="p.link" target="_blank">
-      <h1>{{ p.name }}</h1>
-      <span>{{ p.desc }}</span>
-      <br />
-      <br />
-      <img
-        draggable="false"
-        (load)="imageLoaded = true"
-        [class.loaded]="imageLoaded"
-        class="fade-img"
-        [src]="p.img"
-        [width]="p.ImgWidth"
-        [height]="p.ImgHeight"
-      />
-
-
-    </a>
-  </div>
+  @for (p of data; track $index) {
+    <div class="project">
+      <div [ngClass]="{ 'project-left': p.side === 'left', 'project-right': p.side === 'right' }">
+        <h1>{{ p.name }}</h1>
+        <span class="project-text"> {{ p.desc }}</span>
+        <button (click)="openLink(p.link)" class="link"><img src="github.png" width="40" height="40">Github</button>
+      </div>
+      <div [ngClass]="{ 'project-left': p.side === 'right', 'project-right': p.side === 'left' }">
+        <img
+          draggable="false"
+          (load)="imageLoaded = true"
+          [class.loaded]="imageLoaded"
+          class="fade-img"
+          [src]="p.img"
+          width="620"
+          height="400"
+        />
+      </div>
+    </div>
+  }
 </div>

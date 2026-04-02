@@ -7,12 +7,16 @@ import { TopbarComponent } from "../topbar/topbar.component";
 import { BadgeComponent } from "../badge/badge.component";
 import { Project } from "../models/project.models";
 import { BottomComponent } from '../bottom/bottom.component';
+import { TimelineComponent } from '../timeline/timeline.component';
+import { AsciiAnimationComponent } from '../ascii-animation/ascii-animation.component';
 
 @Component({
   selector: "app-front-page",
   standalone: true,
   imports: [
+    TimelineComponent,
     ProjectComponent,
+    AsciiAnimationComponent,
     AboutComponent,
     SkillsComponent,
     CommonModule,
@@ -30,9 +34,8 @@ export class FrontPageComponent {
       lang: "Typescript",
       link: "https://github.com/Moritz344/GruvAnime",
       img: "gruvanime.png",
-      desc: "Eine Web App zum Durchsuchen von Mangas und Animes.",
-      ImgWidth: 500,
-      ImgHeight: 280,
+      desc: "Eine Website zum Durchsuchen von Mangas und Animes. Es gibt die möglichkeit Beliebte,kommende und gerade veröffentlichte Animes und Mangas zu durchsuchen. Beim anklicken eines Animes/Manga werden weitere informationen angezeigt wie Genres,Anzahl Episoden,Status,Beschreibung etc. Außerdem kann über die Kalendar Ansicht gesehen werden welche Anime an welchen Tagen und um wie viel Uhr erscheinen.",
+      side: "right",
     },
 
     {
@@ -40,71 +43,28 @@ export class FrontPageComponent {
       lang: "Python",
       link: "https://github.com/Moritz344/Texteditor",
       img: "texteditor.png",
-      desc: "Ein einfach gehaltener Texteditor für Notizen oder zum Schreiben von Python Code.",
-      ImgWidth: 500,
-      ImgHeight: 280,
+      desc: "Ein einfach gehaltener Texteditor für Notizen oder um Python Code zuschreiben. ",
+      side: "left",
     },
-
-    {
-      name: "Pixel Simulation",
-      lang: "Python",
-      link: "https://github.com/Moritz344/Simulation-of-Life",
-      img: "pixel-sim.png",
-      desc: "Pixel, die Leben simulieren. Es geht um kleine Pixel in einem Grid, die Regeln befolgen.",
-      ImgWidth: 500,
-      ImgHeight: 280,
-    },
-
     {
       name: "Spiel Info Website",
       lang: "Typescript",
       link: "https://github.com/Moritz344/raid-log",
       img: "arc_raiders.jpg",
-      desc: "Eine Info Website über das Spiel Arc Raiders.",
-      ImgWidth: 500,
-      ImgHeight: 300,
-    },
-    {
-      name: "Notizen App",
-      lang: "Typescript",
-      link: "https://github.com/Moritz344/Coal",
-      img: "notes.png",
-      desc: "Eine minimale Notizen App.",
-      ImgWidth: 500,
-      ImgHeight: 300,
-    },
+      desc: "Eine Info Website über das Spiel Arc Raiders. Es gibt die möglichkeit nach Gegenständen vom Spiel,nach Quests ,nach Gegenern (Arcs) und Händlern zu suchen.",
+      side: "right",
 
+    },
     {
       name: "Twitch Client",
       lang: "Typescript",
       link: "https://github.com/Moritz344/lurker",
-      img: "chat_client.png",
-      desc: "Ein chat client für twitch.tv.",
-      ImgWidth: 500,
-      ImgHeight: 300,
+      img: "lurker_new.png",
+      desc: "Ein Chat Client für twitch.tv. Die App ermöglicht es, den Chat eines Twitch Kanals in Echtzeit zu verfolgen. Dabei werden User Badges, individuelle Chat Farben und Twitch Emojis angezeigt. Durch das Anklicken eines Users kann dessen User Card geöffnet werden, in der weitere Informationen sowie die neuesten Nachrichten des Users,das Profilbild und die Profil Beschreibung angezeigt wird.",
+      side: "left",
     },
   ];
 
-  projectsInWork: Project[] = [
-    {
-      name: "Notizen App",
-      lang: "Typescript",
-      link: "https://github.com/Moritz344/coal",
-      img: "notes.png",
-      desc: "Eine minimale Notizen app.",
-      ImgWidth: 500,
-      ImgHeight: 300,
-    },
-    {
-      name: "Linux App Launcher",
-      lang: "Typescript",
-      link: "https://github.com/Moritz344/Gravel",
-      img: "gravel_zoom.png",
-      desc: "Ein App Launcher für Linux.",
-      ImgWidth: 500,
-      ImgHeight: 300,
-    },
-  ];
 
   links = [
     {
@@ -112,8 +72,6 @@ export class FrontPageComponent {
       link: "https://github.com/Moritz344",
       desc: "Mein Github.",
       img: "",
-      ImgWidth: 0,
-      ImgHeight: 0,
     },
 
     {

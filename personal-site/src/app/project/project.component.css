@@ -1,35 +1,56 @@
 
-.project-items{
-  display: inline-flex;
-  flex-direction: column;
-  background-color: rgba(0,0,0,0.1);
-  padding: 20px;
-  transition: 0.3s ease;
-  border-radius: 10px;
-  width: 500px;
-  height: 420px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-  transition: 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.248);
+.project {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
-.project-container{
-  display: grid;
-  grid-template-columns: repeat(2,600px);
-  margin: 50px;
-  margin-top: 0px;
-  gap: 2rem 0;
-  margin-left: 600px;
-
+.link{
+  display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-
-  justify-items: center;
-  align-items: center;
-
-
-
+  box-shadow: none;
+  background-color: var(--black-low-opacity-light);
+  color: var(--primary-color-text);
+  border-radius: 2px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  border: none;
 }
+
+.link:hover{
+  background-color: var(--black-low-opacity);
+}
+
+span{
+  text-align: justify;
+}
+
+.project-left {
+  flex: 1;
+  order: 1;
+}
+
+.project-text{
+  font-size: 20px;
+  text-align: justify;
+}
+
+.project-right {
+  flex-shrink: 0;
+  max-width: 700px;
+  order: 2;
+}
+
+.project-right img {
+  display: block;
+}
+
+
 
 
 .badge-container{
@@ -41,35 +62,14 @@
 
 
 @media (max-width: 768px) {
-
-
-  .project-container{
-    grid-template-columns: repeat(1,600px);
-    margin-left: 0;
-
+  .project {
+    flex-direction: column;
+    max-width: 100%;
   }
 
-
-
-  .project-items{
-    max-width: 250px;
-    height: 390px;
-
+  .project-right {
+    width: 100%;
   }
-  .project-items img{
-    max-width: 250px;
-    max-height: 200px;
-
-  }
-  .project-header{
-
-    margin-left: 0px;
-    font-size: 20px;
-
-  }
-
-
-
 }
 
 a{
@@ -80,15 +80,25 @@ app-badge{
 	margin-right: 10px;
 }
 
-
-
-.project-items:hover{
-  transform: scale(1.02);
-  background-color: rgba(0,0,0,0.2);
+.left{
+  position: absolute;
+  top: 30px;
+  left: 50px;
 }
 
-.project-items img {
-  border-radius: 10px;
+.right{
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+
+.project img{
+  transition: 0.3s ease;
+}
+
+.project img:hover{
+  transform: scale(1.02);
 }
 
 .fade-img {

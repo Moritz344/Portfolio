@@ -1,26 +1,23 @@
 
 <div class="container" >
-
-    <div class="container-elements"   >
-          <nav>
+    <div class="container-elements">
           @if (isMobile) {
             <div class="active">
               <button (click)="onNavToggle()">
                 <img src="menu.svg"></button>
                 @if (toggleNav) {
-                  <a [routerLink]="['/']"  fragment="home">Home </a>
-                  <a [routerLink]="['/']" fragment="about">About </a>
-                  <a [routerLink]="['/']" fragment="skills">Skills </a>
-                  <a [routerLink]="['/']" fragment="projekte" >Projekte </a>
+                   <a (click)="goto('home')">Home </a>
+                   <a (click)="goto('about')">About </a>
+                   <a (click)="goto('skills')">Skills </a>
+                   <a (click)="goto('projekte')">Projekte </a>
               }
             </div>
           }@else {
-            <a [routerLink]="['/']" fragment="home">Home </a>
-            <a [routerLink]="['/']" fragment="about">About </a>
-            <a [routerLink]="['/']" fragment="skills">Skills </a>
-            <a [routerLink]="['/']" fragment="projekte" >Projekte </a>
+            <a [ngClass]="{ 'active': selectedFragment === 'home' }" (click)="goto('home')">Home </a>
+            <a [ngClass]="{ 'active': selectedFragment === 'about' }"(click)="goto('about')">About </a>
+            <a [ngClass]="{ 'active': selectedFragment === 'skills' }"(click)="goto('skills')">Skills </a>
+            <a [ngClass]="{ 'active': selectedFragment === 'projekte' }"(click)="goto('projekte')">Projekte </a>
 
           }
-          </nav>
     </div>
 </div>

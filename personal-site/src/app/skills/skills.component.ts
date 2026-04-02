@@ -8,9 +8,9 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 })
 export class SkillsComponent {
 
-  javascriptProjects: string[] = ["https://github.com/Moritz344/dl-manga", "https://github.com/Moritz344/JTChat", "https://github.com/Moritz344/foggy.js", "https://github.com/Moritz344/mcsh", "https://github.com/Moritz344/PokeType", "https://github.com/Moritz344/osu-cli"]
+  javascriptProjects: string[] = ["https://github.com/Moritz344/JTChat", "https://github.com/Moritz344/foggy.js", "https://github.com/Moritz344/mcsh", "https://github.com/Moritz344/PokeType", "https://github.com/Moritz344/osu-cli"]
   pythonProjects: string[] = ["https://github.com/Moritz344/Simulation-of-Life", "https://github.com/Moritz344/Texteditor", "https://github.com/Moritz344/mcscan-gui", "https://github.com/Moritz344/Meteor-Game", "https://github.com/Moritz344/Discord-Bot"]
-  angularProjects: string[] = ["https://github.com/Moritz344/Gravel", "https://github.com/Moritz344/lurker", "https://github.com/Moritz344/Coal", "https://github.com/Moritz344/GruvManga", "https://github.com/Moritz344/Raid-Log",]
+  angularProjects: string[] = ["https://github.com/Moritz344/Gravel", "https://github.com/Moritz344/lurker", "https://github.com/Moritz344/Coal", "https://github.com/Moritz344/GruvAnime", "https://github.com/Moritz344/Raid-Log",]
 
   icons = [
     { name: 'Javascript', src: 'javascript.svg', link: 'https://github.com/Moritz344/dl-manga' },

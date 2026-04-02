@@ -1,0 +1,26 @@
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  position: relative;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 1000px;
+  background-color: #88C0D0;
+  margin-top: 100px;
+  margin-left: 0px;
+}
+
+.first-block{
+  position: absolute;
+  left: 50%;
+  transform: translateX(100px);
+  bottom: 80px;
+  background-color: var(--color-bg-alt);
+  border-radius: 10px;
+  height: 150px;
+  padding: 10px;
+}
+

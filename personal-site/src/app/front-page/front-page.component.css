@@ -9,20 +9,26 @@
 
 }
 
-pre{
-  user-select: none;
+
+.timeline-container{
+  margin-bottom: 200px;
 }
+
+app-ascii-animation{
+  z-index: 0;
+}
+
 .about-container {
-  margin-bottom: 355px;
+  margin-bottom: 400px;
 }
 
 .skills-container {
   margin-bottom: 400px;
 }
 
+
 .subtext{
   display: flex;
-  color: grey;
   font-size: 30px;
   justify-content: center;
   margin-right: 30px;
@@ -33,6 +39,7 @@ pre{
 
 .greet-container pre{
   font-size: 30px;
+  margin-bottom: 0px;
 }
 
 @media (max-width: 768px) {
@@ -110,22 +117,6 @@ pre{
   margin-top: 0px;
 }
 
-.project-container{
-  display: grid;
-  grid-template-columns: repeat(2,600px);
-  margin: 50px;
-  margin-top: 0px;
-  gap: 2rem 0;
-
-
-  justify-content: center;
-  align-items: center;
-
-  justify-items: center;
-  align-items: center;
-
-
-}
 
 @media (max-width: 768px) {
 
@@ -165,6 +156,7 @@ pre{
   opacity: 1;
 }
 
+
 h1{
 
   cursor: pointer;
@@ -173,11 +165,10 @@ h1{
 }
 
 pre{
-
+  user-select: none;
   cursor: pointer;
   margin-bottom: 0;
   font-size: 40px;
-  color: var(--color-primary);
 
 }
 

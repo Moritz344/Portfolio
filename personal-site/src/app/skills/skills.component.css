@@ -32,6 +32,7 @@
 .icons-item span {
   font-size: 14px;
   font-weight: 500;
+  color: white;
 }
 
 
@@ -67,6 +68,8 @@ p{
   font-size: 20px;
 
 }
+
+
 span{
   color: var(--color-primary);   /* sanftes Blaugrün */
 }

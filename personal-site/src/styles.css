@@ -1,42 +1,35 @@
 :root {
-  /* Grundfarben (Dark Mode) */
-  --color-bg: #1e1f26;
-  --color-bg-alt: #2a2b32;
-  --color-surface: #2f3038;
+  --color-bg: #1e1e20;
+  --color-bg-alt: #2d2d30;
+  --color-surface: #383838;
 
-  /* Akzentfarben */
-  --color-primary: #8ba6a9;   /* sanftes Blaugrün */
-  --color-secondary: #a48ea9; /* blasses Flieder */
-  --color-tertiary: #c2b28f;  /* beige/goldig */
+  --color-primary: #3584e4;
+  --color-secondary: #1c71d8;
+  --color-tertiary: #99c1f1;
 
-  --color-surface50: rgba(47, 48, 56, 0.3);
+  --color-surface50: rgba(56, 56, 56, 0.3);
 
-  /* 50% Transparenz */
   --black-low-opacity: rgba(0, 0, 0, 0.5);
-
-  /* 20% Transparenz */
   --black-low-opacity-light: rgba(0, 0, 0, 0.2);
 
-  --color-neutral-100: oklch(97% 0 0);
-  --color-neutral-400: oklch(70.8% 0 0);
-  --color-neutral-700: oklch(37.1% 0 0);
-  --color-neutral-800: oklch(26.9% 0 0);
-  --color-neutral-900: oklch(20.5% 0 0);
-  --color-neutral-950: oklch(14.5% 0 0);
+  --color-neutral-100: #deddda;
+  --color-neutral-400: #9a9996;
+  --color-neutral-700: #5e5c64;
+  --color-neutral-800: #3d3846;
+  --color-neutral-900: #241f31;
+  --color-neutral-950: #000000;
 
-  /* Textfarben */
-  --color-text: #e4e4e7;
-  --color-text-muted: #a1a1aa;
-  --color-text-light: #70707a;
+  --color-text: #ffffff;
+  --color-text-muted: #c0bfbc;
+  --color-text-light: #77767b;
 
-  /* Zustände */
-  --color-green: #9bbf9e;
-  --color-warning: #d6c68a;
-  --color-error: #c28a8a;
-   --color-green-hover: #85ab89;
+  --color-green: #33d17a;
+  --color-warning: #f6d32d;
+  --color-error: #e01b24;
+  --color-green-hover: #2ec27e;
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.6);
-  --border-color: #3a3b42;
-  --radius: 12px;
+  --border-color: #45454a;
+  --radius: 6px;
 }
 
 
@@ -79,7 +72,7 @@ body::-webkit-scrollbar {
 body {
   background: var(--color-bg);
   color: var(--color-text);
-  font-family: 'Arial',monospace;
+  font-family: 'Roboto';
   margin: 0px;
 }
 
@@ -93,9 +86,8 @@ button {
 
 
 a {
-  color: var(--color-primary);   /* sanftes Blaugrün */
+  color: var(--color-primary);
   text-decoration: none;
-  transition: 0.3s ease;
 }
 a:hover{
   text-decoration: underline;
@@ -120,12 +112,11 @@ section{
 }
 
 strong {
-  color: var(--color-secondary);
-
+  color: var(--color-text);
 }
 
 h1{
-  color: var(--color-primary);
+  color: var(--color-text);
 
 }
 
@@ -136,6 +127,6 @@ p{
 
 
 button.secondary {
-  background: var(--color-secondary);
+  background: var(--color-primary);
 }
 
