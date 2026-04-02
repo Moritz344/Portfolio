@@ -8,28 +8,20 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 })
 export class SkillsComponent {
 
-  javascriptProjects: string[] = ["https://github.com/Moritz344/JTChat", "https://github.com/Moritz344/foggy.js", "https://github.com/Moritz344/mcsh", "https://github.com/Moritz344/PokeType", "https://github.com/Moritz344/osu-cli"]
-  pythonProjects: string[] = ["https://github.com/Moritz344/Simulation-of-Life", "https://github.com/Moritz344/Texteditor", "https://github.com/Moritz344/mcscan-gui", "https://github.com/Moritz344/Meteor-Game", "https://github.com/Moritz344/Discord-Bot"]
-  angularProjects: string[] = ["https://github.com/Moritz344/Gravel", "https://github.com/Moritz344/lurker", "https://github.com/Moritz344/Coal", "https://github.com/Moritz344/GruvAnime", "https://github.com/Moritz344/Raid-Log",]
-
   icons = [
-    { name: 'Javascript', src: 'javascript.svg', link: 'https://github.com/Moritz344/dl-manga' },
-    { name: 'Python', src: 'python.svg', link: 'https://github.com/Moritz344/Texteditor' },
-    { name: 'Angular', src: 'angular.svg', link: 'https://github.com/Moritz344/MangaWebApp' },
+    { name: 'Javascript', src: 'javascript.svg', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+    { name: 'Typescript', src: 'typescript.png', link: 'https://www.typescriptlang.org/' },
+    { name: 'Python', src: 'python.svg', link: 'https://www.python.org/' },
+    { name: 'php', src: 'php.png', link: 'https://www.php.net/' },
+    { name: 'SQL', src: 'sql.png', link: 'https://www.w3schools.com/sql/' },
+    { name: 'Angular', src: 'angular.svg', link: 'https://angular.dev' },
+    { name: 'HTML', src: 'html.svg', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+    { name: 'CSS', src: 'css.svg', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+    { name: 'Docker', src: 'docker.png', link: 'https://www.docker.com/' },
+    { name: 'Git', src: 'git.svg', link: 'https://git-scm.com/' },
+    { name: 'Bun', src: 'bun.png', link: 'https://bun.sh/' },
+    { name: 'Node.js', src: 'nodejs.svg', link: 'https://nodejs.org/en/' },
   ];
 
-  chooseRandom(lang: string) {
-    if (lang === "javascript.svg") {
-      let randomProject = this.javascriptProjects[Math.floor(Math.random() * this.javascriptProjects.length)];
-      this.icons[0].link = randomProject;
-    } else if (lang === "python.svg") {
-      let randomProject = this.pythonProjects[Math.floor(Math.random() * this.pythonProjects.length)];
-      this.icons[1].link = randomProject;
-    } else {
-      let randomProject = this.angularProjects[Math.floor(Math.random() * this.angularProjects.length)];
-      this.icons[2].link = randomProject;
-
-    }
-  }
 
 }

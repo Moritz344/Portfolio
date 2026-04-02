@@ -2,13 +2,14 @@
 <div class="skills-container">
 
 
+  <h1 style="font-size: 60px"> Meine Skills</h1>
+  <br><br>
   <div class="icons-list" >
-
       @for(icon of icons; track $index) {
-      <a  [href]="icon.link" target="_blank" class="icons-item">
-          <img (click)="chooseRandom(icon.src)" [src]="icon.src"  width="90">
-        <span> {{ icon.name }}</span>
-        </a>
+      <a [href]="icon.link" target="_blank" class="icons-item">
+          <img  [src]="icon.src"  width="70">
+          <span> {{ icon.name }}</span>
+      </a>
 
       }
 
