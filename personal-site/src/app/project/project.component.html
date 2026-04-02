@@ -3,7 +3,7 @@
     <div class="project">
       <div [ngClass]="{ 'project-left': p.side === 'left', 'project-right': p.side === 'right' }">
         <h1>{{ p.name }}</h1>
-        <span class="project-text"> {{ p.desc }}</span>
+        <p class="project-text"> {{ p.desc }}</p>
         <button (click)="openLink(p.link)" class="link"><img src="github.png" width="40" height="40">Github</button>
       </div>
       <div [ngClass]="{ 'project-left': p.side === 'right', 'project-right': p.side === 'left' }">

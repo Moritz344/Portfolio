@@ -34,7 +34,7 @@ export class FrontPageComponent {
       lang: "Typescript",
       link: "https://github.com/Moritz344/GruvAnime",
       img: "gruvanime.png",
-      desc: "Eine Website zum Durchsuchen von Mangas und Animes. Es gibt die möglichkeit Beliebte,kommende und gerade veröffentlichte Animes und Mangas zu durchsuchen. Beim anklicken eines Animes/Manga werden weitere informationen angezeigt wie Genres,Anzahl Episoden,Status,Beschreibung etc. Außerdem kann über die Kalendar Ansicht gesehen werden welche Anime an welchen Tagen und um wie viel Uhr erscheinen.",
+      desc: "Eine Website zum Durchsuchen von Mangas und Animes. Es gibt die Möglichkeit, beliebte, kommende und gerade veröffentlichte Animes und Mangas zu durchsuchen. Beim Anklicken eines Animes oder Mangas werden weitere Informationen angezeigt, wie Genres, Anzahl der Episoden, Status, Beschreibung etc. Außerdem kann über die Kalenderansicht gesehen werden, welche Animes an welchen Tagen und um wie viel Uhr erscheinen.",
       side: "right",
     },
 
@@ -43,7 +43,7 @@ export class FrontPageComponent {
       lang: "Python",
       link: "https://github.com/Moritz344/Texteditor",
       img: "texteditor.png",
-      desc: "Ein einfach gehaltener Texteditor für Notizen oder um Python Code zuschreiben. ",
+      desc: "Ein einfach gehaltener Texteditor für Notizen oder zum Schreiben von Python Code.",
       side: "left",
     },
     {
@@ -51,9 +51,8 @@ export class FrontPageComponent {
       lang: "Typescript",
       link: "https://github.com/Moritz344/raid-log",
       img: "arc_raiders.jpg",
-      desc: "Eine Info Website über das Spiel Arc Raiders. Es gibt die möglichkeit nach Gegenständen vom Spiel,nach Quests ,nach Gegenern (Arcs) und Händlern zu suchen.",
+      desc: "Eine Info Website über das Spiel Arc Raiders. Es gibt die Möglichkeit, nach Gegenständen aus dem Spiel, nach Quests, nach Gegnern (Arcs) und nach Händlern zu suchen.",
       side: "right",
-
     },
     {
       name: "Twitch Client",
