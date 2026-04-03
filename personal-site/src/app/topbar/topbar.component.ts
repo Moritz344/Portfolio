@@ -27,7 +27,7 @@ export class TopbarComponent implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit() {
     const sections = ['home', 'about', 'skills', 'projekte'];
-    
+
     this.observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -36,12 +36,14 @@ export class TopbarComponent implements AfterViewInit, OnDestroy {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
     sections.forEach(id => {
       const el = document.getElementById(id);
-      if (el) this.observer.observe(el);
+      if (el) {
+        this.observer.observe(el);
+      }
     });
   }
 
