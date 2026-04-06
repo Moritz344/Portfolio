@@ -9,6 +9,10 @@
 
 }
 
+.enter-animtion{
+  animation: fadeIn 1s ease-out forwards;
+}
+
 
 .timeline-container{
   margin-bottom: 200px;

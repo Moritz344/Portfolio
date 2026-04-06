@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, signal, AfterViewInit, ViewChild, ElementRef } from "@angular/core";
 import { ProjectComponent } from "../project/project.component";
 import { CommonModule } from "@angular/common";
 import { AboutComponent } from "../about/about.component";
@@ -9,6 +9,7 @@ import { Project } from "../models/project.models";
 import { BottomComponent } from '../bottom/bottom.component';
 import { TimelineComponent } from '../timeline/timeline.component';
 import { AsciiAnimationComponent } from '../ascii-animation/ascii-animation.component';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: "app-front-page",
@@ -26,8 +27,22 @@ import { AsciiAnimationComponent } from '../ascii-animation/ascii-animation.comp
   ],
   templateUrl: "./front-page.component.html",
   styleUrl: "./front-page.component.css",
+  animations: [
+    trigger('fadeIn', [
+      state('void', style({ opacity: 0, transform: 'translateY(20px)' })),
+      state('*', style({ opacity: 1, transform: 'translateY(0)' })),
+      transition(':enter', animate('600ms ease')),
+    ]),
+  ],
 })
-export class FrontPageComponent {
+export class FrontPageComponent implements AfterViewInit {
+  @ViewChild('aboutSection') aboutSection!: ElementRef;
+  @ViewChild('skillsSection') skillsSection!: ElementRef;
+  @ViewChild('projectsSection') projectsSection!: ElementRef;
+  public isShownAbout = signal(false);
+  public isShownSkills = signal(false);
+  public isShownProjects = signal(false);
+
   projects: Project[] = [
     {
       name: "Anime Web App",
@@ -93,4 +108,29 @@ export class FrontPageComponent {
   ];
 
   constructor() { }
+
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target.id == "about") {
+              this.isShownAbout.update((about) => true);
+            } else if (entry.target.id == "skills") {
+              this.isShownSkills.update((skills) => true);
+            } else if (entry.target.id == "projekte") {
+              this.isShownProjects.update((projects) => true)
+
+            }
+
+          }
+          console.log(entry.target.id);
+        });
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(this.aboutSection.nativeElement);
+    observer.observe(this.skillsSection.nativeElement);
+    observer.observe(this.projectsSection.nativeElement);
+  }
 }

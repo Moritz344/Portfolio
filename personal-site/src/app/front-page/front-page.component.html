@@ -16,11 +16,11 @@
   </pre>
   </div>
 </section>
-<section id="about">
-  <div class="about-container">
-    <app-about class="fade-text" #about></app-about>
-  </div>
-</section>
+  <section id="about" #aboutSection [@fadeIn]="isShownAbout() ? 'visible' : 'void'">
+    <div class="about-container">
+     <app-about class="fade-text" #about></app-about>
+    </div>
+  </section>
 
 <!--
 <section id="timeline">
@@ -30,20 +30,18 @@
 </section>
 -->
 
-<section id="skills">
-  <div class="skills-container">
+<section id="skills" #skillsSection [@fadeIn]="isShownSkills() ? 'visible' : 'void'" class="skills-container">
     <app-skills class="fade-text" #skills> </app-skills>
     <div class="skills-text">
-    </div>
   </div>
 </section>
 
 
-<div class="project-header">
+<div class="project-header" >
   <h1 class="fade-text">Meine Projekte</h1>
 </div>
 <br />
-<section id="projekte">
+<section #projectsSection [@fadeIn]="isShownProjects() ? 'visible' : 'void'" id="projekte">
   <div class="project-container">
     <app-project [data]="projects" #projekte> </app-project>
   </div>
