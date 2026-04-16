@@ -10,7 +10,6 @@ import { BottomComponent } from '../bottom/bottom.component';
 import { TimelineComponent } from '../timeline/timeline.component';
 import { AsciiAnimationComponent } from '../ascii-animation/ascii-animation.component';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { WaveBackgroundComponent } from '../wave-background/wave-background.component';
 
 // TODO: omarchy like screensaver for the front page
 
@@ -18,7 +17,6 @@ import { WaveBackgroundComponent } from '../wave-background/wave-background.comp
   selector: "app-front-page",
   standalone: true,
   imports: [
-    WaveBackgroundComponent,
     TimelineComponent,
     ProjectComponent,
     AsciiAnimationComponent,
