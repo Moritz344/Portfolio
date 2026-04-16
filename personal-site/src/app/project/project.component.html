@@ -8,14 +8,15 @@
       </div>
       <div [ngClass]="{ 'project-left': p.side === 'right', 'project-right': p.side === 'left' }">
         <img
+          style="border-radius: 5px;"
           (click)="openLink(p.link)"
           draggable="false"
           (load)="imageLoaded = true"
           [class.loaded]="imageLoaded"
           class="fade-img"
           [src]="p.img"
-          width="620"
-          height="400"
+          width="500"
+          height="300"
         />
       </div>
     </div>

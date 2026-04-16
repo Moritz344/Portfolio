@@ -3,12 +3,13 @@
 
 
   <h1 style="font-size: 60px"> Meine Skills</h1>
+  <p style="display: flex;justify-content: center;margin-bottom: 0px">Technologien und Programmiersprachen</p>
   <br><br>
   <div class="icons-list" >
       @for(icon of icons; track $index) {
       <a [href]="icon.link" target="_blank" class="icons-item">
           <img  [src]="icon.src"  width="70">
-          <span> {{ icon.name }}</span>
+          <span style="font-size: 17px"> {{ icon.name }}</span>
       </a>
 
       }

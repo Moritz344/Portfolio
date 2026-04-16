@@ -36,7 +36,7 @@
 
 .icons-list{
   display: grid;
-  grid-template-columns: repeat(4,150px);
+  grid-template-columns: repeat(6,100px);
   gap: 10px;
   justify-content: center;
 }

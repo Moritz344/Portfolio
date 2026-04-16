@@ -1,3 +1,6 @@
+.project-container{
+
+}
 
 .project {
   display: flex;
@@ -15,12 +18,14 @@
   box-shadow: none;
   background-color: var(--black-low-opacity-light);
   color: var(--primary-color-text);
-  border-radius: 2px;
   padding: 10px;
   margin-top: 20px;
   font-size: 20px;
   border: none;
+  border-radius: 10px;
 }
+
+
 
 .link:hover{
   background-color: var(--black-low-opacity);
@@ -28,11 +33,12 @@
 
 span{
   text-align: justify;
+  max-width: 700px;
 }
 
 .project-left {
-  flex: 1;
   order: 1;
+  max-width: 700px;
 }
 
 .project-text{
