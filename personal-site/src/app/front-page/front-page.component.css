@@ -12,18 +12,12 @@
 }
 
 
-.enter-animtion{
-  animation: fadeIn 1s ease-out forwards;
-}
 
 
 .timeline-container{
   margin-bottom: 200px;
 }
 
-app-ascii-animation{
-  z-index: 0;
-}
 
 .about-container {
   margin-bottom: 400px;
@@ -80,22 +74,8 @@ app-ascii-animation{
 }
 
 
-.fade-text {
-  animation: fadeIn 1s ease-out forwards;
-  opacity: 0;
-}
 
 
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-
-}
 
 .project-in-work{
 	display: grid;

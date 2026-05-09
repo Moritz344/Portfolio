@@ -30,11 +30,19 @@ export class TopbarComponent implements AfterViewInit, OnDestroy {
 
     this.observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
+        let closestEntry: IntersectionObserverEntry | null = null;
+
+        for (const entry of entries) {
           if (entry.isIntersecting) {
-            this.selectedFragment = entry.target.id;
+            if (!closestEntry || entry.boundingClientRect.top < closestEntry.boundingClientRect.top) {
+              closestEntry = entry;
+            }
           }
-        });
+        }
+
+        if (closestEntry) {
+          this.selectedFragment = closestEntry.target.id;
+        }
       },
       { threshold: 0.3 }
     );

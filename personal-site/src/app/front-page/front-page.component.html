@@ -13,7 +13,7 @@
 </section>
   <section id="about" #aboutSection [@fadeIn]="isShownAbout() ? 'visible' : 'void'">
     <div class="about-container">
-     <app-about class="fade-text" #about></app-about>
+     <app-about #about></app-about>
     </div>
   </section>
 
@@ -26,7 +26,7 @@
 -->
 
 <section id="skills" #skillsSection [@fadeIn]="isShownSkills() ? 'visible' : 'void'" class="skills-container">
-    <app-skills class="fade-text" #skills> </app-skills>
+    <app-skills #skills> </app-skills>
     <div class="skills-text">
   </div>
 </section>

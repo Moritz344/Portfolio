@@ -11,7 +11,6 @@ import { TimelineComponent } from '../timeline/timeline.component';
 import { AsciiAnimationComponent } from '../ascii-animation/ascii-animation.component';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
-// TODO: omarchy like screensaver for the front page
 
 @Component({
   selector: "app-front-page",
@@ -112,8 +111,12 @@ export class FrontPageComponent implements AfterViewInit {
   constructor() { }
 
   ngAfterViewInit() {
+    let isInitial = true;
+
     const observer = new IntersectionObserver(
       (entries) => {
+        if (isInitial) return;
+
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             if (entry.target.id == "about") {
@@ -126,7 +129,6 @@ export class FrontPageComponent implements AfterViewInit {
             }
 
           }
-          console.log(entry.target.id);
         });
       },
       { threshold: 0.3 }
@@ -134,5 +136,7 @@ export class FrontPageComponent implements AfterViewInit {
     observer.observe(this.aboutSection.nativeElement);
     observer.observe(this.skillsSection.nativeElement);
     observer.observe(this.projectsSection.nativeElement);
+
+    setTimeout(() => { isInitial = false; });
   }
 }
