@@ -9,6 +9,7 @@
                    <a (click)="goto('home')">Home </a>
                    <a (click)="goto('about')">About </a>
                    <a (click)="goto('skills')">Skills </a>
+                   <a (click)="goto('work')">Erfahrung</a>
                    <a (click)="goto('projekte')">Projekte </a>
               }
             </div>
@@ -16,6 +17,7 @@
             <a [ngClass]="{ 'active': selectedFragment === 'home' }" (click)="goto('home')">Home </a>
             <a [ngClass]="{ 'active': selectedFragment === 'about' }"(click)="goto('about')">About </a>
             <a [ngClass]="{ 'active': selectedFragment === 'skills' }"(click)="goto('skills')">Skills </a>
+            <a [ngClass]="{ 'active': selectedFragment === 'work' }"(click)="goto('work')">Erfahrung</a>
             <a [ngClass]="{ 'active': selectedFragment === 'projekte' }"(click)="goto('projekte')">Projekte </a>
 
           }

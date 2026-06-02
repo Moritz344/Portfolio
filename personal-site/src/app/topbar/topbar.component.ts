@@ -26,7 +26,7 @@ export class TopbarComponent implements AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit() {
-    const sections = ['home', 'about', 'skills', 'projekte'];
+    const sections = ['home', 'about', 'skills', 'projekte','work'];
 
     this.observer = new IntersectionObserver(
       (entries) => {
