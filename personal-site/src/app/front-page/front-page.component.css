@@ -1,16 +1,61 @@
 
+
+::ng-deep .split-text p {
+  font-size: 100px;
+  margin-left: 100px;
+}
+
+
 .greet-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 500px;
-  margin-top: 250px;
-  position: relative;
+  margin-top: 150px;
   z-index: 10;
+  position: relative;
+  animation: 1s fadeIn;
 
 }
 
+
+.left-text{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 300px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.left-text h1{
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.left-text p{
+  text-align: justify;
+  width: 500px;
+}
+
+.front-img{
+  object-fit: cover;
+  border-radius: 10px;
+  filter: blur(1px);
+  filter: saturate(1.100);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
 
 
@@ -23,20 +68,16 @@
   margin-bottom: 400px;
 }
 
+.work-container{
+  margin-bottom: 400px;
+
+}
+
 .skills-container {
   margin-bottom: 400px;
 }
 
 
-.subtext{
-  display: flex;
-  font-size: 30px;
-  justify-content: center;
-  margin-right: 30px;
-  cursor: auto;
-  margin-top: -50px;
-
-}
 
 .greet-container pre{
   font-size: 30px;

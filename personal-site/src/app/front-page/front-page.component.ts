@@ -1,4 +1,4 @@
-import { Component, signal, AfterViewInit, ViewChild, ElementRef } from "@angular/core";
+import { Component, signal,HostListener, AfterViewInit, ViewChild, ElementRef } from "@angular/core";
 import { ProjectComponent } from "../project/project.component";
 import { CommonModule } from "@angular/common";
 import { AboutComponent } from "../about/about.component";
@@ -8,23 +8,28 @@ import { BadgeComponent } from "../badge/badge.component";
 import { Project } from "../models/project.models";
 import { BottomComponent } from '../bottom/bottom.component';
 import { TimelineComponent } from '../timeline/timeline.component';
-import { AsciiAnimationComponent } from '../ascii-animation/ascii-animation.component';
+import {NgOptimizedImage} from '@angular/common';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { TiltDirective } from '../directives/tilt.directive';
+import { WorkExperienceComponent } from "../work-experience/work-experience.component";
 
+// TODO: show work experience
 
 @Component({
   selector: "app-front-page",
   standalone: true,
   imports: [
+    WorkExperienceComponent,
     TimelineComponent,
     ProjectComponent,
-    AsciiAnimationComponent,
     AboutComponent,
+    NgOptimizedImage,
     SkillsComponent,
     CommonModule,
     TopbarComponent,
     BadgeComponent,
-    BottomComponent
+    BottomComponent,
+    TiltDirective
   ],
   templateUrl: "./front-page.component.html",
   styleUrl: "./front-page.component.css",
@@ -37,12 +42,16 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ],
 })
 export class FrontPageComponent implements AfterViewInit {
+  @ViewChild("frontCover") frontCover!: ElementRef;
   @ViewChild('aboutSection') aboutSection!: ElementRef;
   @ViewChild('skillsSection') skillsSection!: ElementRef;
   @ViewChild('projectsSection') projectsSection!: ElementRef;
+  @ViewChild('work') workSection!: ElementRef;
   public isShownAbout = signal(false);
   public isShownSkills = signal(false);
   public isShownProjects = signal(false);
+  public isShownWork = signal(false);
+  public reveal: number = 0;
 
   projects: Project[] = [
     {
@@ -59,7 +68,7 @@ export class FrontPageComponent implements AfterViewInit {
       lang: "Python",
       link: "https://github.com/Moritz344/Texteditor",
       img: "texteditor.png",
-      desc: "Ein einfach gehaltener Texteditor für Notizen oder zum Schreiben von Python Code.",
+      desc: "Ein einfach gehaltener Texteditor für Notizen oder zum Schreiben von Python Code. Er bietet Syntax Higlighting für Python Datein, einen Markdown Editor und mehr.",
       side: "left",
     },
     {
@@ -108,9 +117,12 @@ export class FrontPageComponent implements AfterViewInit {
     },
   ];
 
-  constructor() { }
+
+  constructor() {}
+
 
   ngAfterViewInit() {
+
     let isInitial = true;
 
     const observer = new IntersectionObserver(
@@ -120,21 +132,23 @@ export class FrontPageComponent implements AfterViewInit {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             if (entry.target.id == "about") {
-              this.isShownAbout.update((about) => true);
+              this.isShownAbout.set(true);
             } else if (entry.target.id == "skills") {
-              this.isShownSkills.update((skills) => true);
+              this.isShownSkills.set(true);
             } else if (entry.target.id == "projekte") {
-              this.isShownProjects.update((projects) => true)
-
+              this.isShownProjects.set(true);
+            } else if (entry.target.id == "work") {
+              this.isShownWork.set(true);
             }
 
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.2 }
     );
     observer.observe(this.aboutSection.nativeElement);
     observer.observe(this.skillsSection.nativeElement);
+    observer.observe(this.workSection.nativeElement);
     observer.observe(this.projectsSection.nativeElement);
 
     setTimeout(() => { isInitial = false; });

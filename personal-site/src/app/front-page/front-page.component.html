@@ -1,14 +1,11 @@
 <app-topbar></app-topbar>
-<!--
-<app-wave-background></app-wave-background>
--->
 <section id="home">
   <div class="greet-container">
-      <img width="1000" src="front.png">
-      <!--
-  <div class="subtext">
-  </div>
-      -->
+    <img #frontCover class="front-img" [appTilt]="5" [tiltEase]="0.1" width="1200" height="700" ngSrc="me_2.jpg" priority>
+    <div class="left-text">
+    <p>
+    </p>
+    </div>
   </div>
 </section>
   <section id="about" #aboutSection [@fadeIn]="isShownAbout() ? 'visible' : 'void'">
@@ -16,6 +13,7 @@
      <app-about #about></app-about>
     </div>
   </section>
+
 
 <!--
 <section id="timeline">
@@ -29,6 +27,10 @@
     <app-skills #skills> </app-skills>
     <div class="skills-text">
   </div>
+</section>
+
+<section id="work" #work [@fadeIn]="isShownWork() ? 'visible' : 'void'" class="work-container">
+  <app-work-experience></app-work-experience>
 </section>
 
 
