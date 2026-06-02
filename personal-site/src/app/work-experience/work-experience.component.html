@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Berufserfahrung</h1>
+  <div class="work-container">
+    @for (work of workInfo(); track $index) {
+      <img [src]="work.img">
+      <!--
+      <div class="desc">
+        <p>{{ work.description }}</p>
+      </div>
+      -->
+    }
+  </div>
+</div>
