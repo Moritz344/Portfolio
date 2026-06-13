@@ -1,0 +1,59 @@
+.screen{
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: black;
+  opacity: 0.3;
+  backdrop-filter: blur(4px);
+}
+
+img{
+  animation: 0.3s fadeIn;
+}
+
+
+
+.close{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  justify-content: center;
+  z-index: 1002;
+}
+
+.container{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+
+.arrow{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+}
+
+
+
+.arrow.left{
+  left: -80px;
+}
+
+.arrow.right{
+  right: -80px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+
