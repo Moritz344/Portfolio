@@ -8,17 +8,17 @@
       </div>
       <div [ngClass]="{ 'project-left': p.side === 'right', 'project-right': p.side === 'left' }">
         <img
+          #projectImg
           style="border-radius: 5px;"
-          (click)="openLink(p.link)"
+          (click)="onOpenPictureList(p.images)"
           draggable="false"
           (load)="imageLoaded = true"
           [class.loaded]="imageLoaded"
-          class="fade-img"
-          [src]="p.img"
-          width="800"
-          height="500"
+          [src]="p.images[0]"
+          [ngStyle]="{'width': p.width, 'height':p.height  }"
         />
       </div>
     </div>
   }
 </div>
+
