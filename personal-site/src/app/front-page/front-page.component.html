@@ -34,13 +34,16 @@
 </section>
 
 
+@if (showProjectImages()) {
+  <app-picture-list (close)="onCloseProjectImages()" [images]="moreProjectImages()"></app-picture-list>
+}
 <div class="project-header" >
   <h1 class="fade-text">Meine Projekte</h1>
 </div>
 <br />
 <section #projectsSection [@fadeIn]="isShownProjects() ? 'visible' : 'void'" id="projekte">
   <div class="project-container">
-    <app-project [data]="projects" #projekte> </app-project>
+    <app-project (showPictures)="onShowProjectImages($event)" [data]="projects" #projekte> </app-project>
   </div>
 </section>
 
