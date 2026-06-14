@@ -29,7 +29,6 @@ export class WorkExperienceComponent {
       img: "symbicom.jpg"
     }];
     this.workInfo.set(symbicomWorkInfo);
-    console.log(this.workInfo());
   }
 
 }
