@@ -56,4 +56,20 @@ img{
   transform: translateY(-50%) rotate(180deg);
 }
 
+.loading-container{
+  height: 500px;
+  border-radius: 5px;
+  width: 800px;
+  background-color: black;
+}
+
+.loading-items{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%)
+}
 

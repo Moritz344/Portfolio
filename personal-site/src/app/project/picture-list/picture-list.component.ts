@@ -11,6 +11,15 @@ export class PictureListComponent implements OnInit,OnChanges{
   @Output() close = new EventEmitter<void>();
   public currentImage = signal<string>("");
   public currentIndex = signal<number>(0);
+  public loading = signal(true)
+
+  preloadImage(src: string) {
+    this.loading.set(true);
+    const img = new Image();
+    img.onload = () => this.loading.set(false);
+    img.onerror = () => this.loading.set(false);
+    img.src = src;
+  }
 
   constructor() {}
 
@@ -19,6 +28,7 @@ export class PictureListComponent implements OnInit,OnChanges{
       const next = this.currentIndex() + 1;
       this.currentIndex.set(next);
       this.currentImage.set(this.images[next]);
+      this.preloadImage(this.currentImage());
     }
   }
 
@@ -27,6 +37,7 @@ export class PictureListComponent implements OnInit,OnChanges{
       const prev = this.currentIndex() - 1;
       this.currentIndex.set(prev);
       this.currentImage.set(this.images[prev]);
+      this.preloadImage(this.currentImage());
     }
   }
 
@@ -46,5 +57,6 @@ export class PictureListComponent implements OnInit,OnChanges{
   ngOnChanges() {
     this.currentIndex.set(0);
     this.currentImage.set(this.images[0]);
+    this.preloadImage(this.currentImage());
   }
 }

@@ -3,7 +3,19 @@
 
 <button (click)="onClose()" class="close"><img src="close.svg"></button>
 <div class="container">
-  <img [src]="currentImage()" style="border-radius: 5px" width="1200" >
+    @if (loading()) {
+      <div class="loading-container">
+        <div class="loading-items">
+          <span class="loader"></span>
+          <span>Bild lädt... </span>
+        </div>
+      </div>
+    }
+    @if (!loading()) {
+      <img
+      [src]="currentImage()"
+      style="border-radius: 5px" width="1200" >
+    }
     @if (currentIndex() > 0) {
       <button (click)="onPrevImage()" class="arrow left"><img src="arrow.svg"></button>
     }
