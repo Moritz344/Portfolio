@@ -7,10 +7,12 @@
   <br><br>
   <div class="icons-list" >
       @for(icon of icons; track $index) {
-      <a [href]="icon.link" target="_blank" class="icons-item">
-          <img  [src]="icon.src"  width="75">
-          <span style="font-size: 17px"> {{ icon.name }}</span>
-      </a>
+        <div class="icon-item">
+          <a [href]="icon.link" target="_blank" class="icons-item">
+              <img  [src]="icon.src"  width="75">
+              <span style="font-size: 17px"> {{ icon.name }}</span>
+          </a>
+        </div>
 
       }
 

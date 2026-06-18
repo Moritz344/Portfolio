@@ -23,21 +23,28 @@
   align-items: center;
   text-decoration: none;
   color: inherit;
-  gap: 8px;
 }
 
 .icons-item span {
+  position: absolute;
+  bottom: -20px;
   font-size: 14px;
   font-weight: 500;
   color: white;
 }
+
+.icon-item{
+  position: relative;
+}
+
+
 
 
 
 .icons-list{
   display: grid;
   grid-template-columns: repeat(6,100px);
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
 }
 
