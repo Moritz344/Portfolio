@@ -1,6 +1,8 @@
 import { Component,signal,inject } from '@angular/core';
 import { Router } from '@angular/router';
 
+// TODO: show description
+
 interface work{
   name: string,
   position: string,
