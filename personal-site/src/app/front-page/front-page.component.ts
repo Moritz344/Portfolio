@@ -72,7 +72,7 @@ export class FrontPageComponent implements AfterViewInit {
       lang: "Typescript",
       link: "https://github.com/Moritz344/bob-the-fisherman",
       images: ["bot_1.png","bot_2.png","bot_3.png","bot_4.png"],
-      desc: "Ein Bot für das Spiel Minecraft der automatisch fisht. Für den Bot gibt es sowohl eine Desktop App als auch ein Befehlseingabetool. Es können Befehle über die App eingegeben werden,die gesammelten Gegenständen in einer Tabelle eingesehen werden und Bot Einstellungen angepasst werden.",
+      desc: "Ein Minecraft Bot, der automatisch fischt. Es gibt eine Desktop App und ein Befehlszeilen Tool. Über die App kann der Bot gesteuert werden, gesammelte Gegenstände in einer Tabelle eingesehen werden und Einstellungen angepasst werden.",
       side: "left",
       width: "800px",
       height: "500px",
